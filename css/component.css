@@ -1,0 +1,3548 @@
+/* Button Styles
+------------------------------------*/
+/* General Button Styles */
+.btn {
+	position: relative;
+	transition: .2s ease;
+	font-size: 1.5rem;
+	cursor: pointer; }
+
+.btn:focus, .btn:active:focus, .btn.active:focus {
+	outline: 0 none;
+	box-shadow: none; }
+
+/* Button Content
+------------------------------------*/
+.t-btn-content {
+	white-space: normal; }
+
+/* Buttons Only Icon (O)
+------------------------------------*/
+.t-btn-only-icon {
+	position: relative; }
+
+.t-btn-only-icon i {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	-ms-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%); }
+
+/* Button Sizes
+------------------------------------*/
+/* Extra Small */
+.btn-xs {
+	line-height: 1.4;
+	padding: 0.14286rem 0.5rem;
+	font-size: 0.78571rem; }
+
+/* Medium */
+.btn-md {
+	line-height: 1.4;
+	padding: 0.57143rem 1.42857rem;
+	font-size: 1.07143rem; }
+
+/* Extra Large */
+.btn-xl {
+	line-height: 1.4;
+	padding: 0.92857rem 1.85714rem;
+	font-size: 1.28571rem; }
+
+/* Extramly Large */
+.btn-xxl {
+	line-height: 1.4;
+	padding: 1.07143rem 2.14286rem;
+	font-size: 1.5rem; }
+
+/* Button Types
+------------------------------------*/
+/* Inset Buttons */
+.t-btn-inset {
+	position: relative; }
+
+.t-btn-inset::before {
+	position: absolute;
+	top: 0.14286rem;
+	right: 0.14286rem;
+	bottom: 0.14286rem;
+	left: 0.14286rem;
+	content: "";
+	border: solid 1px #fff;
+	border-radius: 1px; }
+
+.t-btn-inset--rounded::before {
+	border-radius: 50px; }
+
+/* 3d Buttons */
+.t-btn-3d {
+	border-bottom: solid 3px rgba(0, 0, 0, 0.2); }
+
+.t-btn-3d:hover {
+	border-bottom-color: rgba(0, 0, 0, 0.3); }
+
+/* Skew Button */
+.t-btn-skew {
+	-webkit-transform: skewX(-20deg);
+	-ms-transform: skewX(-20deg);
+	transform: skewX(-20deg); }
+
+.t-btn-skew__inner {
+	-webkit-transform: skewX(20deg);
+	-ms-transform: skewX(20deg);
+	transform: skewX(20deg);
+	display: block; }
+
+/* Button Hovers
+------------------------------------*/
+[class*="u-btn-hover"] {
+	z-index: 1; }
+
+[class*="u-btn-hover"]:hover {
+	text-decoration: none; }
+
+[class*="u-btn-hover"]:focus {
+	text-decoration: none; }
+
+[class*="u-btn-hover"]::after {
+	position: absolute;
+	content: "";
+	z-index: -1;
+	transition: all .3s; }
+
+/* Hover v1-1 */
+.t-btn-hover-v1-1::after {
+	top: 0;
+	left: 0;
+	height: 0;
+	width: 100%; }
+
+.t-btn-hover-v1-1:hover::after {
+	height: 100%; }
+
+/* Hover v1-2 */
+.t-btn-hover-v1-2::after {
+	top: 0;
+	right: 0;
+	width: 0;
+	height: 100%; }
+
+.t-btn-hover-v1-2:hover::after {
+	width: 100%; }
+
+/* Hover v1-3 */
+.t-btn-hover-v1-3::after {
+	bottom: 0;
+	left: 0;
+	height: 0;
+	width: 100%; }
+
+.t-btn-hover-v1-3:hover::after {
+	height: 100%; }
+
+/* Hover v1-4 */
+.t-btn-hover-v1-4::after {
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 100%; }
+
+.t-btn-hover-v1-4:hover::after {
+	width: 100%; }
+
+/* Hover v2-1 */
+.t-btn-hover-v2-1::after {
+	top: 0;
+	right: 0;
+	width: 0;
+	height: 100%; }
+
+.t-btn-hover-v2-1:hover::after {
+	left: 0;
+	width: 100%; }
+
+/* Hover v2-2 */
+.t-btn-hover-v2-2::after {
+	left: 0;
+	bottom: 0;
+	height: 0;
+	width: 100%; }
+
+.t-btn-hover-v2-2:hover::after {
+	top: 0;
+	height: 100%; }
+
+/* Button Primary */
+.t-btn-primary {
+	color: #fff;
+	background-color: #72c02c; }
+
+.t-btn-primary:hover, .t-btn-primary.active {
+	border-color: #8cd54a;
+	background-color: #8cd54a; }
+
+.t-btn-primary:hover, .t-btn-primary:focus, .t-btn-primary.active {
+	color: #fff; }
+
+.t-btn-primary.g-btn-hover-reset:hover, .t-btn-primary.g-btn-hover-reset.active {
+	background-color: #72c02c;
+	border-color: #72c02c; }
+
+.t-btn-primary.t-btn-hover-v1-1 {
+	overflow: hidden; }
+
+.t-btn-primary.t-btn-hover-v1-1::after, .t-btn-primary.t-btn-hover-v1-1:hover::after {
+	background-color: #7fd135; }
+
+.t-btn-primary.t-btn-hover-v1-1:hover {
+	background-color: #72c02c;
+	overflow: hidden; }
+
+.t-btn-primary.t-btn-hover-v1-2 {
+	overflow: hidden; }
+
+.t-btn-primary.t-btn-hover-v1-2::after, .t-btn-primary.t-btn-hover-v1-2:hover::after {
+	background-color: #7fd135; }
+
+.t-btn-primary.t-btn-hover-v1-2:hover {
+	background-color: #72c02c;
+	overflow: hidden; }
+
+.t-btn-primary.t-btn-hover-v1-3 {
+	overflow: hidden; }
+
+.t-btn-primary.t-btn-hover-v1-3::after, .t-btn-primary.t-btn-hover-v1-3:hover::after {
+	background-color: #7fd135; }
+
+.t-btn-primary.t-btn-hover-v1-3:hover {
+	background-color: #72c02c;
+	overflow: hidden; }
+
+.t-btn-primary.t-btn-hover-v1-4 {
+	overflow: hidden; }
+
+.t-btn-primary.t-btn-hover-v1-4::after, .t-btn-primary.t-btn-hover-v1-4:hover::after {
+	background-color: #7fd135; }
+
+.t-btn-primary.t-btn-hover-v1-4:hover {
+	background-color: #72c02c;
+	overflow: hidden; }
+
+.t-btn-primary.t-btn-hover-v2-1 {
+	overflow: hidden; }
+
+.t-btn-primary.t-btn-hover-v2-1::after, .t-btn-primary.t-btn-hover-v2-1:hover::after {
+	background-color: #7fd135; }
+
+.t-btn-primary.t-btn-hover-v2-1:hover {
+	background-color: #72c02c;
+	overflow: hidden; }
+
+.t-btn-primary.t-btn-hover-v2-2 {
+	overflow: hidden; }
+
+.t-btn-primary.t-btn-hover-v2-2::after, .t-btn-primary.t-btn-hover-v2-2:hover::after {
+	background-color: #7fd135; }
+
+.t-btn-primary.t-btn-hover-v2-2:hover {
+	background-color: #72c02c;
+	overflow: hidden; }
+
+/* Button White */
+.t-btn-white {
+	color: #555;
+	background-color: #fff; }
+
+.t-btn-white:hover, .t-btn-white.active {
+	border-color: white;
+	background-color: white; }
+
+.t-btn-white:hover, .t-btn-white:focus, .t-btn-white.active {
+	color: #555; }
+
+.t-btn-white.g-btn-hover-reset:hover, .t-btn-white.g-btn-hover-reset.active {
+	background-color: #fff;
+	border-color: #fff; }
+
+.t-btn-white.t-btn-hover-v1-1 {
+	overflow: hidden; }
+
+.t-btn-white.t-btn-hover-v1-1::after, .t-btn-white.t-btn-hover-v1-1:hover::after {
+	background-color: white; }
+
+.t-btn-white.t-btn-hover-v1-1:hover {
+	background-color: #fff;
+	overflow: hidden; }
+
+.t-btn-white.t-btn-hover-v1-2 {
+	overflow: hidden; }
+
+.t-btn-white.t-btn-hover-v1-2::after, .t-btn-white.t-btn-hover-v1-2:hover::after {
+	background-color: white; }
+
+.t-btn-white.t-btn-hover-v1-2:hover {
+	background-color: #fff;
+	overflow: hidden; }
+
+.t-btn-white.t-btn-hover-v1-3 {
+	overflow: hidden; }
+
+.t-btn-white.t-btn-hover-v1-3::after, .t-btn-white.t-btn-hover-v1-3:hover::after {
+	background-color: white; }
+
+.t-btn-white.t-btn-hover-v1-3:hover {
+	background-color: #fff;
+	overflow: hidden; }
+
+.t-btn-white.t-btn-hover-v1-4 {
+	overflow: hidden; }
+
+.t-btn-white.t-btn-hover-v1-4::after, .t-btn-white.t-btn-hover-v1-4:hover::after {
+	background-color: white; }
+
+.t-btn-white.t-btn-hover-v1-4:hover {
+	background-color: #fff;
+	overflow: hidden; }
+
+.t-btn-white.t-btn-hover-v2-1 {
+	overflow: hidden; }
+
+.t-btn-white.t-btn-hover-v2-1::after, .t-btn-white.t-btn-hover-v2-1:hover::after {
+	background-color: white; }
+
+.t-btn-white.t-btn-hover-v2-1:hover {
+	overflow: hidden;
+	background-color: transparent; }
+
+.t-btn-white.t-btn-hover-v2-2 {
+	overflow: hidden; }
+
+.t-btn-white.t-btn-hover-v2-2::after, .t-btn-white.t-btn-hover-v2-2:hover::after {
+	background-color: white; }
+
+.t-btn-white.t-btn-hover-v2-2:hover {
+	overflow: hidden;
+	background-color: transparent; }
+
+/* Button Black */
+.t-btn-black {
+	color: #fff;
+	background-color: #000; }
+
+.t-btn-black:hover, .t-btn-black.active {
+	border-color: #1a1a1a;
+	background-color: #1a1a1a; }
+
+.t-btn-black:hover, .t-btn-black:focus, .t-btn-black.active {
+	color: #fff; }
+
+.t-btn-black.g-btn-hover-reset:hover, .t-btn-black.g-btn-hover-reset.active {
+	background-color: #000;
+	border-color: #000; }
+
+.t-btn-black.t-btn-hover-v1-1 {
+	overflow: hidden; }
+
+.t-btn-black.t-btn-hover-v1-1::after, .t-btn-black.t-btn-hover-v1-1:hover::after {
+	background-color: #0d0d0d; }
+
+.t-btn-black.t-btn-hover-v1-1:hover {
+	background-color: #000;
+	overflow: hidden; }
+
+.t-btn-black.t-btn-hover-v1-2 {
+	overflow: hidden; }
+
+.t-btn-black.t-btn-hover-v1-2::after, .t-btn-black.t-btn-hover-v1-2:hover::after {
+	background-color: #0d0d0d; }
+
+.t-btn-black.t-btn-hover-v1-2:hover {
+	background-color: #000;
+	overflow: hidden; }
+
+.t-btn-black.t-btn-hover-v1-3 {
+	overflow: hidden; }
+
+.t-btn-black.t-btn-hover-v1-3::after, .t-btn-black.t-btn-hover-v1-3:hover::after {
+	background-color: #0d0d0d; }
+
+.t-btn-black.t-btn-hover-v1-3:hover {
+	background-color: #000;
+	overflow: hidden; }
+
+.t-btn-black.t-btn-hover-v1-4 {
+	overflow: hidden; }
+
+.t-btn-black.t-btn-hover-v1-4::after, .t-btn-black.t-btn-hover-v1-4:hover::after {
+	background-color: #0d0d0d; }
+
+.t-btn-black.t-btn-hover-v1-4:hover {
+	background-color: #000;
+	overflow: hidden; }
+
+.t-btn-black.t-btn-hover-v2-1 {
+	overflow: hidden; }
+
+.t-btn-black.t-btn-hover-v2-1::after, .t-btn-black.t-btn-hover-v2-1:hover::after {
+	background-color: #0d0d0d; }
+
+.t-btn-black.t-btn-hover-v2-1:hover {
+	overflow: hidden;
+	background-color: transparent; }
+
+.t-btn-black.t-btn-hover-v2-2 {
+	overflow: hidden; }
+
+.t-btn-black.t-btn-hover-v2-2::after, .t-btn-black.t-btn-hover-v2-2:hover::after {
+	background-color: #0d0d0d; }
+
+.t-btn-black.t-btn-hover-v2-2:hover {
+	overflow: hidden;
+	background-color: transparent; }
+
+/* Button Dark Gray */
+.t-btn-darkgray {
+	color: #fff;
+	background-color: #333; }
+
+.t-btn-darkgray:hover, .t-btn-darkgray.active {
+	border-color: #4d4d4d;
+	background-color: #4d4d4d; }
+
+.t-btn-darkgray:hover, .t-btn-darkgray:focus, .t-btn-darkgray.active {
+	color: #fff; }
+
+.t-btn-darkgray.g-btn-hover-reset:hover, .t-btn-darkgray.g-btn-hover-reset.active {
+	background-color: #333;
+	border-color: #333; }
+
+.t-btn-darkgray.t-btn-hover-v1-1 {
+	overflow: hidden; }
+
+.t-btn-darkgray.t-btn-hover-v1-1::after, .t-btn-darkgray.t-btn-hover-v1-1:hover::after {
+	background-color: #404040; }
+
+.t-btn-darkgray.t-btn-hover-v1-1:hover {
+	background-color: #333;
+	overflow: hidden; }
+
+.t-btn-darkgray.t-btn-hover-v1-2 {
+	overflow: hidden; }
+
+.t-btn-darkgray.t-btn-hover-v1-2::after, .t-btn-darkgray.t-btn-hover-v1-2:hover::after {
+	background-color: #404040; }
+
+.t-btn-darkgray.t-btn-hover-v1-2:hover {
+	background-color: #333;
+	overflow: hidden; }
+
+.t-btn-darkgray.t-btn-hover-v1-3 {
+	overflow: hidden; }
+
+.t-btn-darkgray.t-btn-hover-v1-3::after, .t-btn-darkgray.t-btn-hover-v1-3:hover::after {
+	background-color: #404040; }
+
+.t-btn-darkgray.t-btn-hover-v1-3:hover {
+	background-color: #333;
+	overflow: hidden; }
+
+.t-btn-darkgray.t-btn-hover-v1-4 {
+	overflow: hidden; }
+
+.t-btn-darkgray.t-btn-hover-v1-4::after, .t-btn-darkgray.t-btn-hover-v1-4:hover::after {
+	background-color: #404040; }
+
+.t-btn-darkgray.t-btn-hover-v1-4:hover {
+	background-color: #333;
+	overflow: hidden; }
+
+.t-btn-darkgray.t-btn-hover-v2-1 {
+	overflow: hidden; }
+
+.t-btn-darkgray.t-btn-hover-v2-1::after, .t-btn-darkgray.t-btn-hover-v2-1:hover::after {
+	background-color: #404040; }
+
+.t-btn-darkgray.t-btn-hover-v2-1:hover {
+	background-color: #333;
+	overflow: hidden; }
+
+.t-btn-darkgray.t-btn-hover-v2-2 {
+	overflow: hidden; }
+
+.t-btn-darkgray.t-btn-hover-v2-2::after, .t-btn-darkgray.t-btn-hover-v2-2:hover::after {
+	background-color: #404040; }
+
+.t-btn-darkgray.t-btn-hover-v2-2:hover {
+	background-color: #333;
+	overflow: hidden; }
+
+/* Button Red */
+.t-btn-red {
+	color: #fff;
+	background-color: #f00; }
+
+.t-btn-red:hover, .t-btn-red.active {
+	border-color: #ff3333;
+	background-color: #ff3333; }
+
+.t-btn-red:hover, .t-btn-red:focus, .t-btn-red.active {
+	color: #fff; }
+
+.t-btn-red.g-btn-hover-reset:hover, .t-btn-red.g-btn-hover-reset.active {
+	background-color: #f00;
+	border-color: #f00; }
+
+.t-btn-red.t-btn-hover-v1-1 {
+	overflow: hidden; }
+
+.t-btn-red.t-btn-hover-v1-1::after, .t-btn-red.t-btn-hover-v1-1:hover::after {
+	background-color: #ff1a1a; }
+
+.t-btn-red.t-btn-hover-v1-1:hover {
+	background-color: #f00;
+	overflow: hidden; }
+
+.t-btn-red.t-btn-hover-v1-2 {
+	overflow: hidden; }
+
+.t-btn-red.t-btn-hover-v1-2::after, .t-btn-red.t-btn-hover-v1-2:hover::after {
+	background-color: #ff1a1a; }
+
+.t-btn-red.t-btn-hover-v1-2:hover {
+	background-color: #f00;
+	overflow: hidden; }
+
+.t-btn-red.t-btn-hover-v1-3 {
+	overflow: hidden; }
+
+.t-btn-red.t-btn-hover-v1-3::after, .t-btn-red.t-btn-hover-v1-3:hover::after {
+	background-color: #ff1a1a; }
+
+.t-btn-red.t-btn-hover-v1-3:hover {
+	background-color: #f00;
+	overflow: hidden; }
+
+.t-btn-red.t-btn-hover-v1-4 {
+	overflow: hidden; }
+
+.t-btn-red.t-btn-hover-v1-4::after, .t-btn-red.t-btn-hover-v1-4:hover::after {
+	background-color: #ff1a1a; }
+
+.t-btn-red.t-btn-hover-v1-4:hover {
+	background-color: #f00;
+	overflow: hidden; }
+
+.t-btn-red.t-btn-hover-v2-1 {
+	overflow: hidden; }
+
+.t-btn-red.t-btn-hover-v2-1::after, .t-btn-red.t-btn-hover-v2-1:hover::after {
+	background-color: #ff1a1a; }
+
+.t-btn-red.t-btn-hover-v2-1:hover {
+	background-color: #f00;
+	overflow: hidden; }
+
+.t-btn-red.t-btn-hover-v2-2 {
+	overflow: hidden; }
+
+.t-btn-red.t-btn-hover-v2-2::after, .t-btn-red.t-btn-hover-v2-2:hover::after {
+	background-color: #ff1a1a; }
+
+.t-btn-red.t-btn-hover-v2-2:hover {
+	background-color: #f00;
+	overflow: hidden; }
+
+/* Button Red Tomato */
+.t-btn-lightred {
+	color: #fff;
+	background-color: #e64b3b; }
+
+.t-btn-lightred:hover, .t-btn-lightred.active {
+	border-color: #ec7568;
+	background-color: #ec7568; }
+
+.t-btn-lightred:hover, .t-btn-lightred:focus, .t-btn-lightred.active {
+	color: #fff; }
+
+.t-btn-lightred.g-btn-hover-reset:hover, .t-btn-lightred.g-btn-hover-reset.active {
+	background-color: #e64b3b;
+	border-color: #e64b3b; }
+
+.t-btn-lightred.t-btn-hover-v1-1 {
+	overflow: hidden; }
+
+.t-btn-lightred.t-btn-hover-v1-1::after, .t-btn-lightred.t-btn-hover-v1-1:hover::after {
+	background-color: #e96052; }
+
+.t-btn-lightred.t-btn-hover-v1-1:hover {
+	background-color: #e64b3b;
+	overflow: hidden; }
+
+.t-btn-lightred.t-btn-hover-v1-2 {
+	overflow: hidden; }
+
+.t-btn-lightred.t-btn-hover-v1-2::after, .t-btn-lightred.t-btn-hover-v1-2:hover::after {
+	background-color: #e96052; }
+
+.t-btn-lightred.t-btn-hover-v1-2:hover {
+	background-color: #e64b3b;
+	overflow: hidden; }
+
+.t-btn-lightred.t-btn-hover-v1-3 {
+	overflow: hidden; }
+
+.t-btn-lightred.t-btn-hover-v1-3::after, .t-btn-lightred.t-btn-hover-v1-3:hover::after {
+	background-color: #e96052; }
+
+.t-btn-lightred.t-btn-hover-v1-3:hover {
+	background-color: #e64b3b;
+	overflow: hidden; }
+
+.t-btn-lightred.t-btn-hover-v1-4 {
+	overflow: hidden; }
+
+.t-btn-lightred.t-btn-hover-v1-4::after, .t-btn-lightred.t-btn-hover-v1-4:hover::after {
+	background-color: #e96052; }
+
+.t-btn-lightred.t-btn-hover-v1-4:hover {
+	background-color: #e64b3b;
+	overflow: hidden; }
+
+.t-btn-lightred.t-btn-hover-v2-1 {
+	overflow: hidden; }
+
+.t-btn-lightred.t-btn-hover-v2-1::after, .t-btn-lightred.t-btn-hover-v2-1:hover::after {
+	background-color: #e96052; }
+
+.t-btn-lightred.t-btn-hover-v2-1:hover {
+	background-color: #e64b3b;
+	overflow: hidden; }
+
+.t-btn-lightred.t-btn-hover-v2-2 {
+	overflow: hidden; }
+
+.t-btn-lightred.t-btn-hover-v2-2::after, .t-btn-lightred.t-btn-hover-v2-2:hover::after {
+	background-color: #e96052; }
+
+.t-btn-lightred.t-btn-hover-v2-2:hover {
+	background-color: #e64b3b;
+	overflow: hidden; }
+
+/* Button Dark Red */
+.t-btn-darkred {
+	color: #fff;
+	background-color: #a10f2b; }
+
+.t-btn-darkred:hover, .t-btn-darkred.active {
+	border-color: #d01337;
+	background-color: #d01337; }
+
+.t-btn-darkred:hover, .t-btn-darkred:focus, .t-btn-darkred.active {
+	color: #fff; }
+
+.t-btn-darkred.g-btn-hover-reset:hover, .t-btn-darkred.g-btn-hover-reset.active {
+	background-color: #a10f2b;
+	border-color: #a10f2b; }
+
+.t-btn-darkred.t-btn-hover-v1-1 {
+	overflow: hidden; }
+
+.t-btn-darkred.t-btn-hover-v1-1::after, .t-btn-darkred.t-btn-hover-v1-1:hover::after {
+	background-color: #b81131; }
+
+.t-btn-darkred.t-btn-hover-v1-1:hover {
+	background-color: #a10f2b;
+	overflow: hidden; }
+
+.t-btn-darkred.t-btn-hover-v1-2 {
+	overflow: hidden; }
+
+.t-btn-darkred.t-btn-hover-v1-2::after, .t-btn-darkred.t-btn-hover-v1-2:hover::after {
+	background-color: #b81131; }
+
+.t-btn-darkred.t-btn-hover-v1-2:hover {
+	background-color: #a10f2b;
+	overflow: hidden; }
+
+.t-btn-darkred.t-btn-hover-v1-3 {
+	overflow: hidden; }
+
+.t-btn-darkred.t-btn-hover-v1-3::after, .t-btn-darkred.t-btn-hover-v1-3:hover::after {
+	background-color: #b81131; }
+
+.t-btn-darkred.t-btn-hover-v1-3:hover {
+	background-color: #a10f2b;
+	overflow: hidden; }
+
+.t-btn-darkred.t-btn-hover-v1-4 {
+	overflow: hidden; }
+
+.t-btn-darkred.t-btn-hover-v1-4::after, .t-btn-darkred.t-btn-hover-v1-4:hover::after {
+	background-color: #b81131; }
+
+.t-btn-darkred.t-btn-hover-v1-4:hover {
+	background-color: #a10f2b;
+	overflow: hidden; }
+
+.t-btn-darkred.t-btn-hover-v2-1 {
+	overflow: hidden; }
+
+.t-btn-darkred.t-btn-hover-v2-1::after, .t-btn-darkred.t-btn-hover-v2-1:hover::after {
+	background-color: #b81131; }
+
+.t-btn-darkred.t-btn-hover-v2-1:hover {
+	background-color: #a10f2b;
+	overflow: hidden; }
+
+.t-btn-darkred.t-btn-hover-v2-2 {
+	overflow: hidden; }
+
+.t-btn-darkred.t-btn-hover-v2-2::after, .t-btn-darkred.t-btn-hover-v2-2:hover::after {
+	background-color: #b81131; }
+
+.t-btn-darkred.t-btn-hover-v2-2:hover {
+	background-color: #a10f2b;
+	overflow: hidden; }
+
+/* Button Blue */
+.t-btn-blue {
+	color: #fff;
+	background-color: #3398dc; }
+
+.t-btn-blue:hover, .t-btn-blue.active {
+	border-color: #5faee3;
+	background-color: #5faee3; }
+
+.t-btn-blue:hover, .t-btn-blue:focus, .t-btn-blue.active {
+	color: #fff; }
+
+.t-btn-blue.g-btn-hover-reset:hover, .t-btn-blue.g-btn-hover-reset.active {
+	background-color: #3398dc;
+	border-color: #3398dc; }
+
+.t-btn-blue.t-btn-hover-v1-1 {
+	overflow: hidden; }
+
+.t-btn-blue.t-btn-hover-v1-1::after, .t-btn-blue.t-btn-hover-v1-1:hover::after {
+	background-color: #49a3e0; }
+
+.t-btn-blue.t-btn-hover-v1-1:hover {
+	background-color: #3398dc;
+	overflow: hidden; }
+
+.t-btn-blue.t-btn-hover-v1-2 {
+	overflow: hidden; }
+
+.t-btn-blue.t-btn-hover-v1-2::after, .t-btn-blue.t-btn-hover-v1-2:hover::after {
+	background-color: #49a3e0; }
+
+.t-btn-blue.t-btn-hover-v1-2:hover {
+	background-color: #3398dc;
+	overflow: hidden; }
+
+.t-btn-blue.t-btn-hover-v1-3 {
+	overflow: hidden; }
+
+.t-btn-blue.t-btn-hover-v1-3::after, .t-btn-blue.t-btn-hover-v1-3:hover::after {
+	background-color: #49a3e0; }
+
+.t-btn-blue.t-btn-hover-v1-3:hover {
+	background-color: #3398dc;
+	overflow: hidden; }
+
+.t-btn-blue.t-btn-hover-v1-4 {
+	overflow: hidden; }
+
+.t-btn-blue.t-btn-hover-v1-4::after, .t-btn-blue.t-btn-hover-v1-4:hover::after {
+	background-color: #49a3e0; }
+
+.t-btn-blue.t-btn-hover-v1-4:hover {
+	background-color: #3398dc;
+	overflow: hidden; }
+
+.t-btn-blue.t-btn-hover-v2-1 {
+	overflow: hidden; }
+
+.t-btn-blue.t-btn-hover-v2-1::after, .t-btn-blue.t-btn-hover-v2-1:hover::after {
+	background-color: #49a3e0; }
+
+.t-btn-blue.t-btn-hover-v2-1:hover {
+	background-color: #3398dc;
+	overflow: hidden; }
+
+.t-btn-blue.t-btn-hover-v2-2 {
+	overflow: hidden; }
+
+.t-btn-blue.t-btn-hover-v2-2::after, .t-btn-blue.t-btn-hover-v2-2:hover::after {
+	background-color: #49a3e0; }
+
+.t-btn-blue.t-btn-hover-v2-2:hover {
+	background-color: #3398dc;
+	overflow: hidden; }
+
+/* Button Indigo */
+.t-btn-indigo {
+	color: #fff;
+	background-color: #4263a3; }
+
+.t-btn-indigo:hover, .t-btn-indigo.active {
+	border-color: #5b7cbd;
+	background-color: #5b7cbd; }
+
+.t-btn-indigo:hover, .t-btn-indigo:focus, .t-btn-indigo.active {
+	color: #fff; }
+
+.t-btn-indigo.g-btn-hover-reset:hover, .t-btn-indigo.g-btn-hover-reset.active {
+	background-color: #4263a3;
+	border-color: #4263a3; }
+
+.t-btn-indigo.t-btn-hover-v1-1 {
+	overflow: hidden; }
+
+.t-btn-indigo.t-btn-hover-v1-1::after, .t-btn-indigo.t-btn-hover-v1-1:hover::after {
+	background-color: #496eb5; }
+
+.t-btn-indigo.t-btn-hover-v1-1:hover {
+	background-color: #4263a3;
+	overflow: hidden; }
+
+.t-btn-indigo.t-btn-hover-v1-2 {
+	overflow: hidden; }
+
+.t-btn-indigo.t-btn-hover-v1-2::after, .t-btn-indigo.t-btn-hover-v1-2:hover::after {
+	background-color: #496eb5; }
+
+.t-btn-indigo.t-btn-hover-v1-2:hover {
+	background-color: #4263a3;
+	overflow: hidden; }
+
+.t-btn-indigo.t-btn-hover-v1-3 {
+	overflow: hidden; }
+
+.t-btn-indigo.t-btn-hover-v1-3::after, .t-btn-indigo.t-btn-hover-v1-3:hover::after {
+	background-color: #496eb5; }
+
+.t-btn-indigo.t-btn-hover-v1-3:hover {
+	background-color: #4263a3;
+	overflow: hidden; }
+
+.t-btn-indigo.t-btn-hover-v1-4 {
+	overflow: hidden; }
+
+.t-btn-indigo.t-btn-hover-v1-4::after, .t-btn-indigo.t-btn-hover-v1-4:hover::after {
+	background-color: #496eb5; }
+
+.t-btn-indigo.t-btn-hover-v1-4:hover {
+	background-color: #4263a3;
+	overflow: hidden; }
+
+.t-btn-indigo.t-btn-hover-v2-1 {
+	overflow: hidden; }
+
+.t-btn-indigo.t-btn-hover-v2-1::after, .t-btn-indigo.t-btn-hover-v2-1:hover::after {
+	background-color: #496eb5; }
+
+.t-btn-indigo.t-btn-hover-v2-1:hover {
+	background-color: #4263a3;
+	overflow: hidden; }
+
+.t-btn-indigo.t-btn-hover-v2-2 {
+	overflow: hidden; }
+
+.t-btn-indigo.t-btn-hover-v2-2::after, .t-btn-indigo.t-btn-hover-v2-2:hover::after {
+	background-color: #496eb5; }
+
+.t-btn-indigo.t-btn-hover-v2-2:hover {
+	background-color: #4263a3;
+	overflow: hidden; }
+
+/* Button Purple */
+.t-btn-purple {
+	color: #fff;
+	background-color: #9a69cb; }
+
+.t-btn-purple:hover, .t-btn-purple.active {
+	border-color: #b48fd8;
+	background-color: #b48fd8; }
+
+.t-btn-purple:hover, .t-btn-purple:focus, .t-btn-purple.active {
+	color: #fff; }
+
+.t-btn-purple.g-btn-hover-reset:hover, .t-btn-purple.g-btn-hover-reset.active {
+	background-color: #9a69cb;
+	border-color: #9a69cb; }
+
+.t-btn-purple.t-btn-hover-v1-1 {
+	overflow: hidden; }
+
+.t-btn-purple.t-btn-hover-v1-1::after, .t-btn-purple.t-btn-hover-v1-1:hover::after {
+	background-color: #a77cd2; }
+
+.t-btn-purple.t-btn-hover-v1-1:hover {
+	background-color: #9a69cb;
+	overflow: hidden; }
+
+.t-btn-purple.t-btn-hover-v1-2 {
+	overflow: hidden; }
+
+.t-btn-purple.t-btn-hover-v1-2::after, .t-btn-purple.t-btn-hover-v1-2:hover::after {
+	background-color: #a77cd2; }
+
+.t-btn-purple.t-btn-hover-v1-2:hover {
+	background-color: #9a69cb;
+	overflow: hidden; }
+
+.t-btn-purple.t-btn-hover-v1-3 {
+	overflow: hidden; }
+
+.t-btn-purple.t-btn-hover-v1-3::after, .t-btn-purple.t-btn-hover-v1-3:hover::after {
+	background-color: #a77cd2; }
+
+.t-btn-purple.t-btn-hover-v1-3:hover {
+	background-color: #9a69cb;
+	overflow: hidden; }
+
+.t-btn-purple.t-btn-hover-v1-4 {
+	overflow: hidden; }
+
+.t-btn-purple.t-btn-hover-v1-4::after, .t-btn-purple.t-btn-hover-v1-4:hover::after {
+	background-color: #a77cd2; }
+
+.t-btn-purple.t-btn-hover-v1-4:hover {
+	background-color: #9a69cb;
+	overflow: hidden; }
+
+.t-btn-purple.t-btn-hover-v2-1 {
+	overflow: hidden; }
+
+.t-btn-purple.t-btn-hover-v2-1::after, .t-btn-purple.t-btn-hover-v2-1:hover::after {
+	background-color: #a77cd2; }
+
+.t-btn-purple.t-btn-hover-v2-1:hover {
+	background-color: #9a69cb;
+	overflow: hidden; }
+
+.t-btn-purple.t-btn-hover-v2-2 {
+	overflow: hidden; }
+
+.t-btn-purple.t-btn-hover-v2-2::after, .t-btn-purple.t-btn-hover-v2-2:hover::after {
+	background-color: #a77cd2; }
+
+.t-btn-purple.t-btn-hover-v2-2:hover {
+	background-color: #9a69cb;
+	overflow: hidden; }
+
+/* Button Dark Purple */
+.t-btn-darkpurple {
+	color: #fff;
+	background-color: #6639b6; }
+
+.t-btn-darkpurple:hover, .t-btn-darkpurple.active {
+	border-color: #8157cb;
+	background-color: #8157cb; }
+
+.t-btn-darkpurple:hover, .t-btn-darkpurple:focus, .t-btn-darkpurple.active {
+	color: #fff; }
+
+.t-btn-darkpurple.g-btn-hover-reset:hover, .t-btn-darkpurple.g-btn-hover-reset.active {
+	background-color: #6639b6;
+	border-color: #6639b6; }
+
+.t-btn-darkpurple.t-btn-hover-v1-1 {
+	overflow: hidden; }
+
+.t-btn-darkpurple.t-btn-hover-v1-1::after, .t-btn-darkpurple.t-btn-hover-v1-1:hover::after {
+	background-color: #7244c4; }
+
+.t-btn-darkpurple.t-btn-hover-v1-1:hover {
+	background-color: #6639b6;
+	overflow: hidden; }
+
+.t-btn-darkpurple.t-btn-hover-v1-2 {
+	overflow: hidden; }
+
+.t-btn-darkpurple.t-btn-hover-v1-2::after, .t-btn-darkpurple.t-btn-hover-v1-2:hover::after {
+	background-color: #7244c4; }
+
+.t-btn-darkpurple.t-btn-hover-v1-2:hover {
+	background-color: #6639b6;
+	overflow: hidden; }
+
+.t-btn-darkpurple.t-btn-hover-v1-3 {
+	overflow: hidden; }
+
+.t-btn-darkpurple.t-btn-hover-v1-3::after, .t-btn-darkpurple.t-btn-hover-v1-3:hover::after {
+	background-color: #7244c4; }
+
+.t-btn-darkpurple.t-btn-hover-v1-3:hover {
+	background-color: #6639b6;
+	overflow: hidden; }
+
+.t-btn-darkpurple.t-btn-hover-v1-4 {
+	overflow: hidden; }
+
+.t-btn-darkpurple.t-btn-hover-v1-4::after, .t-btn-darkpurple.t-btn-hover-v1-4:hover::after {
+	background-color: #7244c4; }
+
+.t-btn-darkpurple.t-btn-hover-v1-4:hover {
+	background-color: #6639b6;
+	overflow: hidden; }
+
+.t-btn-darkpurple.t-btn-hover-v2-1 {
+	overflow: hidden; }
+
+.t-btn-darkpurple.t-btn-hover-v2-1::after, .t-btn-darkpurple.t-btn-hover-v2-1:hover::after {
+	background-color: #7244c4; }
+
+.t-btn-darkpurple.t-btn-hover-v2-1:hover {
+	background-color: #6639b6;
+	overflow: hidden; }
+
+.t-btn-darkpurple.t-btn-hover-v2-2 {
+	overflow: hidden; }
+
+.t-btn-darkpurple.t-btn-hover-v2-2::after, .t-btn-darkpurple.t-btn-hover-v2-2:hover::after {
+	background-color: #7244c4; }
+
+.t-btn-darkpurple.t-btn-hover-v2-2:hover {
+	background-color: #6639b6;
+	overflow: hidden; }
+
+/* Button Pink */
+.t-btn-pink {
+	color: #fff;
+	background-color: #e81c62; }
+
+.t-btn-pink:hover, .t-btn-pink.active {
+	border-color: #ed4a82;
+	background-color: #ed4a82; }
+
+.t-btn-pink:hover, .t-btn-pink:focus, .t-btn-pink.active {
+	color: #fff; }
+
+.t-btn-pink.g-btn-hover-reset:hover, .t-btn-pink.g-btn-hover-reset.active {
+	background-color: #e81c62;
+	border-color: #e81c62; }
+
+.t-btn-pink.t-btn-hover-v1-1 {
+	overflow: hidden; }
+
+.t-btn-pink.t-btn-hover-v1-1::after, .t-btn-pink.t-btn-hover-v1-1:hover::after {
+	background-color: #ea3372; }
+
+.t-btn-pink.t-btn-hover-v1-1:hover {
+	background-color: #e81c62;
+	overflow: hidden; }
+
+.t-btn-pink.t-btn-hover-v1-2 {
+	overflow: hidden; }
+
+.t-btn-pink.t-btn-hover-v1-2::after, .t-btn-pink.t-btn-hover-v1-2:hover::after {
+	background-color: #ea3372; }
+
+.t-btn-pink.t-btn-hover-v1-2:hover {
+	background-color: #e81c62;
+	overflow: hidden; }
+
+.t-btn-pink.t-btn-hover-v1-3 {
+	overflow: hidden; }
+
+.t-btn-pink.t-btn-hover-v1-3::after, .t-btn-pink.t-btn-hover-v1-3:hover::after {
+	background-color: #ea3372; }
+
+.t-btn-pink.t-btn-hover-v1-3:hover {
+	background-color: #e81c62;
+	overflow: hidden; }
+
+.t-btn-pink.t-btn-hover-v1-4 {
+	overflow: hidden; }
+
+.t-btn-pink.t-btn-hover-v1-4::after, .t-btn-pink.t-btn-hover-v1-4:hover::after {
+	background-color: #ea3372; }
+
+.t-btn-pink.t-btn-hover-v1-4:hover {
+	background-color: #e81c62;
+	overflow: hidden; }
+
+.t-btn-pink.t-btn-hover-v2-1 {
+	overflow: hidden; }
+
+.t-btn-pink.t-btn-hover-v2-1::after, .t-btn-pink.t-btn-hover-v2-1:hover::after {
+	background-color: #ea3372; }
+
+.t-btn-pink.t-btn-hover-v2-1:hover {
+	background-color: #e81c62;
+	overflow: hidden; }
+
+.t-btn-pink.t-btn-hover-v2-2 {
+	overflow: hidden; }
+
+.t-btn-pink.t-btn-hover-v2-2::after, .t-btn-pink.t-btn-hover-v2-2:hover::after {
+	background-color: #ea3372; }
+
+.t-btn-pink.t-btn-hover-v2-2:hover {
+	background-color: #e81c62;
+	overflow: hidden; }
+
+/* Button Orange */
+.t-btn-orange {
+	color: #fff;
+	background-color: #e57d20; }
+
+.t-btn-orange:hover, .t-btn-orange.active {
+	border-color: #ea984e;
+	background-color: #ea984e; }
+
+.t-btn-orange:hover, .t-btn-orange:focus, .t-btn-orange.active {
+	color: #fff; }
+
+.t-btn-orange.g-btn-hover-reset:hover, .t-btn-orange.g-btn-hover-reset.active {
+	background-color: #e57d20;
+	border-color: #e57d20; }
+
+.t-btn-orange.t-btn-hover-v1-1 {
+	overflow: hidden; }
+
+.t-btn-orange.t-btn-hover-v1-1::after, .t-btn-orange.t-btn-hover-v1-1:hover::after {
+	background-color: #e88a37; }
+
+.t-btn-orange.t-btn-hover-v1-1:hover {
+	background-color: #e57d20;
+	overflow: hidden; }
+
+.t-btn-orange.t-btn-hover-v1-2 {
+	overflow: hidden; }
+
+.t-btn-orange.t-btn-hover-v1-2::after, .t-btn-orange.t-btn-hover-v1-2:hover::after {
+	background-color: #e88a37; }
+
+.t-btn-orange.t-btn-hover-v1-2:hover {
+	background-color: #e57d20;
+	overflow: hidden; }
+
+.t-btn-orange.t-btn-hover-v1-3 {
+	overflow: hidden; }
+
+.t-btn-orange.t-btn-hover-v1-3::after, .t-btn-orange.t-btn-hover-v1-3:hover::after {
+	background-color: #e88a37; }
+
+.t-btn-orange.t-btn-hover-v1-3:hover {
+	background-color: #e57d20;
+	overflow: hidden; }
+
+.t-btn-orange.t-btn-hover-v1-4 {
+	overflow: hidden; }
+
+.t-btn-orange.t-btn-hover-v1-4::after, .t-btn-orange.t-btn-hover-v1-4:hover::after {
+	background-color: #e88a37; }
+
+.t-btn-orange.t-btn-hover-v1-4:hover {
+	background-color: #e57d20;
+	overflow: hidden; }
+
+.t-btn-orange.t-btn-hover-v2-1 {
+	overflow: hidden; }
+
+.t-btn-orange.t-btn-hover-v2-1::after, .t-btn-orange.t-btn-hover-v2-1:hover::after {
+	background-color: #e88a37; }
+
+.t-btn-orange.t-btn-hover-v2-1:hover {
+	background-color: #e57d20;
+	overflow: hidden; }
+
+.t-btn-orange.t-btn-hover-v2-2 {
+	overflow: hidden; }
+
+.t-btn-orange.t-btn-hover-v2-2::after, .t-btn-orange.t-btn-hover-v2-2:hover::after {
+	background-color: #e88a37; }
+
+.t-btn-orange.t-btn-hover-v2-2:hover {
+	background-color: #e57d20;
+	overflow: hidden; }
+
+/* Button Deep Orange */
+.t-btn-deeporange {
+	color: #fff;
+	background-color: #fe541e; }
+
+.t-btn-deeporange:hover, .t-btn-deeporange.active {
+	border-color: #fe7b51;
+	background-color: #fe7b51; }
+
+.t-btn-deeporange:hover, .t-btn-deeporange:focus, .t-btn-deeporange.active {
+	color: #fff; }
+
+.t-btn-deeporange.g-btn-hover-reset:hover, .t-btn-deeporange.g-btn-hover-reset.active {
+	background-color: #fe541e;
+	border-color: #fe541e; }
+
+.t-btn-deeporange.t-btn-hover-v1-1 {
+	overflow: hidden; }
+
+.t-btn-deeporange.t-btn-hover-v1-1::after, .t-btn-deeporange.t-btn-hover-v1-1:hover::after {
+	background-color: #fe6737; }
+
+.t-btn-deeporange.t-btn-hover-v1-1:hover {
+	background-color: #fe541e;
+	overflow: hidden; }
+
+.t-btn-deeporange.t-btn-hover-v1-2 {
+	overflow: hidden; }
+
+.t-btn-deeporange.t-btn-hover-v1-2::after, .t-btn-deeporange.t-btn-hover-v1-2:hover::after {
+	background-color: #fe6737; }
+
+.t-btn-deeporange.t-btn-hover-v1-2:hover {
+	background-color: #fe541e;
+	overflow: hidden; }
+
+.t-btn-deeporange.t-btn-hover-v1-3 {
+	overflow: hidden; }
+
+.t-btn-deeporange.t-btn-hover-v1-3::after, .t-btn-deeporange.t-btn-hover-v1-3:hover::after {
+	background-color: #fe6737; }
+
+.t-btn-deeporange.t-btn-hover-v1-3:hover {
+	background-color: #fe541e;
+	overflow: hidden; }
+
+.t-btn-deeporange.t-btn-hover-v1-4 {
+	overflow: hidden; }
+
+.t-btn-deeporange.t-btn-hover-v1-4::after, .t-btn-deeporange.t-btn-hover-v1-4:hover::after {
+	background-color: #fe6737; }
+
+.t-btn-deeporange.t-btn-hover-v1-4:hover {
+	background-color: #fe541e;
+	overflow: hidden; }
+
+.t-btn-deeporange.t-btn-hover-v2-1 {
+	overflow: hidden; }
+
+.t-btn-deeporange.t-btn-hover-v2-1::after, .t-btn-deeporange.t-btn-hover-v2-1:hover::after {
+	background-color: #fe6737; }
+
+.t-btn-deeporange.t-btn-hover-v2-1:hover {
+	background-color: #fe541e;
+	overflow: hidden; }
+
+.t-btn-deeporange.t-btn-hover-v2-2 {
+	overflow: hidden; }
+
+.t-btn-deeporange.t-btn-hover-v2-2::after, .t-btn-deeporange.t-btn-hover-v2-2:hover::after {
+	background-color: #fe6737; }
+
+.t-btn-deeporange.t-btn-hover-v2-2:hover {
+	background-color: #fe541e;
+	overflow: hidden; }
+
+/* Button Yellow */
+.t-btn-yellow {
+	color: #fff;
+	background-color: #ebc71d; }
+
+.t-btn-yellow:hover, .t-btn-yellow.active {
+	border-color: #efd34c;
+	background-color: #efd34c; }
+
+.t-btn-yellow:hover, .t-btn-yellow:focus, .t-btn-yellow.active {
+	color: #fff; }
+
+.t-btn-yellow.g-btn-hover-reset:hover, .t-btn-yellow.g-btn-hover-reset.active {
+	background-color: #ebc71d;
+	border-color: #ebc71d; }
+
+.t-btn-yellow.t-btn-hover-v1-1 {
+	overflow: hidden; }
+
+.t-btn-yellow.t-btn-hover-v1-1::after, .t-btn-yellow.t-btn-hover-v1-1:hover::after {
+	background-color: #edcd34; }
+
+.t-btn-yellow.t-btn-hover-v1-1:hover {
+	background-color: #ebc71d;
+	overflow: hidden; }
+
+.t-btn-yellow.t-btn-hover-v1-2 {
+	overflow: hidden; }
+
+.t-btn-yellow.t-btn-hover-v1-2::after, .t-btn-yellow.t-btn-hover-v1-2:hover::after {
+	background-color: #edcd34; }
+
+.t-btn-yellow.t-btn-hover-v1-2:hover {
+	background-color: #ebc71d;
+	overflow: hidden; }
+
+.t-btn-yellow.t-btn-hover-v1-3 {
+	overflow: hidden; }
+
+.t-btn-yellow.t-btn-hover-v1-3::after, .t-btn-yellow.t-btn-hover-v1-3:hover::after {
+	background-color: #edcd34; }
+
+.t-btn-yellow.t-btn-hover-v1-3:hover {
+	background-color: #ebc71d;
+	overflow: hidden; }
+
+.t-btn-yellow.t-btn-hover-v1-4 {
+	overflow: hidden; }
+
+.t-btn-yellow.t-btn-hover-v1-4::after, .t-btn-yellow.t-btn-hover-v1-4:hover::after {
+	background-color: #edcd34; }
+
+.t-btn-yellow.t-btn-hover-v1-4:hover {
+	background-color: #ebc71d;
+	overflow: hidden; }
+
+.t-btn-yellow.t-btn-hover-v2-1 {
+	overflow: hidden; }
+
+.t-btn-yellow.t-btn-hover-v2-1::after, .t-btn-yellow.t-btn-hover-v2-1:hover::after {
+	background-color: #edcd34; }
+
+.t-btn-yellow.t-btn-hover-v2-1:hover {
+	background-color: #ebc71d;
+	overflow: hidden; }
+
+.t-btn-yellow.t-btn-hover-v2-2 {
+	overflow: hidden; }
+
+.t-btn-yellow.t-btn-hover-v2-2::after, .t-btn-yellow.t-btn-hover-v2-2:hover::after {
+	background-color: #edcd34; }
+
+.t-btn-yellow.t-btn-hover-v2-2:hover {
+	background-color: #ebc71d;
+	overflow: hidden; }
+
+/* Button Aqua */
+.t-btn-aqua {
+	color: #fff;
+	background-color: #29d6e6; }
+
+.t-btn-aqua:hover, .t-btn-aqua.active {
+	border-color: #57dfeb;
+	background-color: #57dfeb; }
+
+.t-btn-aqua:hover, .t-btn-aqua:focus, .t-btn-aqua.active {
+	color: #fff; }
+
+.t-btn-aqua.g-btn-hover-reset:hover, .t-btn-aqua.g-btn-hover-reset.active {
+	background-color: #29d6e6;
+	border-color: #29d6e6; }
+
+.t-btn-aqua.t-btn-hover-v1-1 {
+	overflow: hidden; }
+
+.t-btn-aqua.t-btn-hover-v1-1::after, .t-btn-aqua.t-btn-hover-v1-1:hover::after {
+	background-color: #40dae9; }
+
+.t-btn-aqua.t-btn-hover-v1-1:hover {
+	background-color: #29d6e6;
+	overflow: hidden; }
+
+.t-btn-aqua.t-btn-hover-v1-2 {
+	overflow: hidden; }
+
+.t-btn-aqua.t-btn-hover-v1-2::after, .t-btn-aqua.t-btn-hover-v1-2:hover::after {
+	background-color: #40dae9; }
+
+.t-btn-aqua.t-btn-hover-v1-2:hover {
+	background-color: #29d6e6;
+	overflow: hidden; }
+
+.t-btn-aqua.t-btn-hover-v1-3 {
+	overflow: hidden; }
+
+.t-btn-aqua.t-btn-hover-v1-3::after, .t-btn-aqua.t-btn-hover-v1-3:hover::after {
+	background-color: #40dae9; }
+
+.t-btn-aqua.t-btn-hover-v1-3:hover {
+	background-color: #29d6e6;
+	overflow: hidden; }
+
+.t-btn-aqua.t-btn-hover-v1-4 {
+	overflow: hidden; }
+
+.t-btn-aqua.t-btn-hover-v1-4::after, .t-btn-aqua.t-btn-hover-v1-4:hover::after {
+	background-color: #40dae9; }
+
+.t-btn-aqua.t-btn-hover-v1-4:hover {
+	background-color: #29d6e6;
+	overflow: hidden; }
+
+.t-btn-aqua.t-btn-hover-v2-1 {
+	overflow: hidden; }
+
+.t-btn-aqua.t-btn-hover-v2-1::after, .t-btn-aqua.t-btn-hover-v2-1:hover::after {
+	background-color: #40dae9; }
+
+.t-btn-aqua.t-btn-hover-v2-1:hover {
+	background-color: #29d6e6;
+	overflow: hidden; }
+
+.t-btn-aqua.t-btn-hover-v2-2 {
+	overflow: hidden; }
+
+.t-btn-aqua.t-btn-hover-v2-2::after, .t-btn-aqua.t-btn-hover-v2-2:hover::after {
+	background-color: #40dae9; }
+
+.t-btn-aqua.t-btn-hover-v2-2:hover {
+	background-color: #29d6e6;
+	overflow: hidden; }
+
+/* Button Cyan */
+.t-btn-cyan {
+	color: #fff;
+	background-color: #00bed6; }
+
+.t-btn-cyan:hover, .t-btn-cyan.active {
+	border-color: #0ae4ff;
+	background-color: #0ae4ff; }
+
+.t-btn-cyan:hover, .t-btn-cyan:focus, .t-btn-cyan.active {
+	color: #fff; }
+
+.t-btn-cyan.g-btn-hover-reset:hover, .t-btn-cyan.g-btn-hover-reset.active {
+	background-color: #00bed6;
+	border-color: #00bed6; }
+
+.t-btn-cyan.t-btn-hover-v1-1 {
+	overflow: hidden; }
+
+.t-btn-cyan.t-btn-hover-v1-1::after, .t-btn-cyan.t-btn-hover-v1-1:hover::after {
+	background-color: #00d5f0; }
+
+.t-btn-cyan.t-btn-hover-v1-1:hover {
+	background-color: #00bed6;
+	overflow: hidden; }
+
+.t-btn-cyan.t-btn-hover-v1-2 {
+	overflow: hidden; }
+
+.t-btn-cyan.t-btn-hover-v1-2::after, .t-btn-cyan.t-btn-hover-v1-2:hover::after {
+	background-color: #00d5f0; }
+
+.t-btn-cyan.t-btn-hover-v1-2:hover {
+	background-color: #00bed6;
+	overflow: hidden; }
+
+.t-btn-cyan.t-btn-hover-v1-3 {
+	overflow: hidden; }
+
+.t-btn-cyan.t-btn-hover-v1-3::after, .t-btn-cyan.t-btn-hover-v1-3:hover::after {
+	background-color: #00d5f0; }
+
+.t-btn-cyan.t-btn-hover-v1-3:hover {
+	background-color: #00bed6;
+	overflow: hidden; }
+
+.t-btn-cyan.t-btn-hover-v1-4 {
+	overflow: hidden; }
+
+.t-btn-cyan.t-btn-hover-v1-4::after, .t-btn-cyan.t-btn-hover-v1-4:hover::after {
+	background-color: #00d5f0; }
+
+.t-btn-cyan.t-btn-hover-v1-4:hover {
+	background-color: #00bed6;
+	overflow: hidden; }
+
+.t-btn-cyan.t-btn-hover-v2-1 {
+	overflow: hidden; }
+
+.t-btn-cyan.t-btn-hover-v2-1::after, .t-btn-cyan.t-btn-hover-v2-1:hover::after {
+	background-color: #00d5f0; }
+
+.t-btn-cyan.t-btn-hover-v2-1:hover {
+	background-color: #00bed6;
+	overflow: hidden; }
+
+.t-btn-cyan.t-btn-hover-v2-2 {
+	overflow: hidden; }
+
+.t-btn-cyan.t-btn-hover-v2-2::after, .t-btn-cyan.t-btn-hover-v2-2:hover::after {
+	background-color: #00d5f0; }
+
+.t-btn-cyan.t-btn-hover-v2-2:hover {
+	background-color: #00bed6;
+	overflow: hidden; }
+
+/* Button Teal */
+.t-btn-teal {
+	color: #fff;
+	background-color: #18ba9b; }
+
+.t-btn-teal:hover, .t-btn-teal.active {
+	border-color: #22e3be;
+	background-color: #22e3be; }
+
+.t-btn-teal:hover, .t-btn-teal:focus, .t-btn-teal.active {
+	color: #fff; }
+
+.t-btn-teal.g-btn-hover-reset:hover, .t-btn-teal.g-btn-hover-reset.active {
+	background-color: #18ba9b;
+	border-color: #18ba9b; }
+
+.t-btn-teal.t-btn-hover-v1-1 {
+	overflow: hidden; }
+
+.t-btn-teal.t-btn-hover-v1-1::after, .t-btn-teal.t-btn-hover-v1-1:hover::after {
+	background-color: #1bd1ae; }
+
+.t-btn-teal.t-btn-hover-v1-1:hover {
+	background-color: #18ba9b;
+	overflow: hidden; }
+
+.t-btn-teal.t-btn-hover-v1-2 {
+	overflow: hidden; }
+
+.t-btn-teal.t-btn-hover-v1-2::after, .t-btn-teal.t-btn-hover-v1-2:hover::after {
+	background-color: #1bd1ae; }
+
+.t-btn-teal.t-btn-hover-v1-2:hover {
+	background-color: #18ba9b;
+	overflow: hidden; }
+
+.t-btn-teal.t-btn-hover-v1-3 {
+	overflow: hidden; }
+
+.t-btn-teal.t-btn-hover-v1-3::after, .t-btn-teal.t-btn-hover-v1-3:hover::after {
+	background-color: #1bd1ae; }
+
+.t-btn-teal.t-btn-hover-v1-3:hover {
+	background-color: #18ba9b;
+	overflow: hidden; }
+
+.t-btn-teal.t-btn-hover-v1-4 {
+	overflow: hidden; }
+
+.t-btn-teal.t-btn-hover-v1-4::after, .t-btn-teal.t-btn-hover-v1-4:hover::after {
+	background-color: #1bd1ae; }
+
+.t-btn-teal.t-btn-hover-v1-4:hover {
+	background-color: #18ba9b;
+	overflow: hidden; }
+
+.t-btn-teal.t-btn-hover-v2-1 {
+	overflow: hidden; }
+
+.t-btn-teal.t-btn-hover-v2-1::after, .t-btn-teal.t-btn-hover-v2-1:hover::after {
+	background-color: #1bd1ae; }
+
+.t-btn-teal.t-btn-hover-v2-1:hover {
+	background-color: #18ba9b;
+	overflow: hidden; }
+
+.t-btn-teal.t-btn-hover-v2-2 {
+	overflow: hidden; }
+
+.t-btn-teal.t-btn-hover-v2-2::after, .t-btn-teal.t-btn-hover-v2-2:hover::after {
+	background-color: #1bd1ae; }
+
+.t-btn-teal.t-btn-hover-v2-2:hover {
+	background-color: #18ba9b;
+	overflow: hidden; }
+
+/* Button Brown */
+.t-btn-brown {
+	color: #fff;
+	background-color: #9c8061; }
+
+.t-btn-brown:hover, .t-btn-brown.active {
+	border-color: #b09980;
+	background-color: #b09980; }
+
+.t-btn-brown:hover, .t-btn-brown:focus, .t-btn-brown.active {
+	color: #fff; }
+
+.t-btn-brown.g-btn-hover-reset:hover, .t-btn-brown.g-btn-hover-reset.active {
+	background-color: #9c8061;
+	border-color: #9c8061; }
+
+.t-btn-brown.t-btn-hover-v1-1 {
+	overflow: hidden; }
+
+.t-btn-brown.t-btn-hover-v1-1::after, .t-btn-brown.t-btn-hover-v1-1:hover::after {
+	background-color: #a68d70; }
+
+.t-btn-brown.t-btn-hover-v1-1:hover {
+	background-color: #9c8061;
+	overflow: hidden; }
+
+.t-btn-brown.t-btn-hover-v1-2 {
+	overflow: hidden; }
+
+.t-btn-brown.t-btn-hover-v1-2::after, .t-btn-brown.t-btn-hover-v1-2:hover::after {
+	background-color: #a68d70; }
+
+.t-btn-brown.t-btn-hover-v1-2:hover {
+	background-color: #9c8061;
+	overflow: hidden; }
+
+.t-btn-brown.t-btn-hover-v1-3 {
+	overflow: hidden; }
+
+.t-btn-brown.t-btn-hover-v1-3::after, .t-btn-brown.t-btn-hover-v1-3:hover::after {
+	background-color: #a68d70; }
+
+.t-btn-brown.t-btn-hover-v1-3:hover {
+	background-color: #9c8061;
+	overflow: hidden; }
+
+.t-btn-brown.t-btn-hover-v1-4 {
+	overflow: hidden; }
+
+.t-btn-brown.t-btn-hover-v1-4::after, .t-btn-brown.t-btn-hover-v1-4:hover::after {
+	background-color: #a68d70; }
+
+.t-btn-brown.t-btn-hover-v1-4:hover {
+	background-color: #9c8061;
+	overflow: hidden; }
+
+.t-btn-brown.t-btn-hover-v2-1 {
+	overflow: hidden; }
+
+.t-btn-brown.t-btn-hover-v2-1::after, .t-btn-brown.t-btn-hover-v2-1:hover::after {
+	background-color: #a68d70; }
+
+.t-btn-brown.t-btn-hover-v2-1:hover {
+	background-color: #9c8061;
+	overflow: hidden; }
+
+.t-btn-brown.t-btn-hover-v2-2 {
+	overflow: hidden; }
+
+.t-btn-brown.t-btn-hover-v2-2::after, .t-btn-brown.t-btn-hover-v2-2:hover::after {
+	background-color: #a68d70; }
+
+.t-btn-brown.t-btn-hover-v2-2:hover {
+	background-color: #9c8061;
+	overflow: hidden; }
+
+/* Button Bluegrey */
+.t-btn-bluegray {
+	color: #fff;
+	background-color: #585f69; }
+
+.t-btn-bluegray:hover, .t-btn-bluegray.active {
+	border-color: #6f7885;
+	background-color: #6f7885; }
+
+.t-btn-bluegray:hover, .t-btn-bluegray:focus, .t-btn-bluegray.active {
+	color: #fff; }
+
+.t-btn-bluegray.g-btn-hover-reset:hover, .t-btn-bluegray.g-btn-hover-reset.active {
+	background-color: #585f69;
+	border-color: #585f69; }
+
+.t-btn-bluegray.t-btn-hover-v1-1 {
+	overflow: hidden; }
+
+.t-btn-bluegray.t-btn-hover-v1-1::after, .t-btn-bluegray.t-btn-hover-v1-1:hover::after {
+	background-color: #646c77; }
+
+.t-btn-bluegray.t-btn-hover-v1-1:hover {
+	background-color: #585f69;
+	overflow: hidden; }
+
+.t-btn-bluegray.t-btn-hover-v1-2 {
+	overflow: hidden; }
+
+.t-btn-bluegray.t-btn-hover-v1-2::after, .t-btn-bluegray.t-btn-hover-v1-2:hover::after {
+	background-color: #646c77; }
+
+.t-btn-bluegray.t-btn-hover-v1-2:hover {
+	background-color: #585f69;
+	overflow: hidden; }
+
+.t-btn-bluegray.t-btn-hover-v1-3 {
+	overflow: hidden; }
+
+.t-btn-bluegray.t-btn-hover-v1-3::after, .t-btn-bluegray.t-btn-hover-v1-3:hover::after {
+	background-color: #646c77; }
+
+.t-btn-bluegray.t-btn-hover-v1-3:hover {
+	background-color: #585f69;
+	overflow: hidden; }
+
+.t-btn-bluegray.t-btn-hover-v1-4 {
+	overflow: hidden; }
+
+.t-btn-bluegray.t-btn-hover-v1-4::after, .t-btn-bluegray.t-btn-hover-v1-4:hover::after {
+	background-color: #646c77; }
+
+.t-btn-bluegray.t-btn-hover-v1-4:hover {
+	background-color: #585f69;
+	overflow: hidden; }
+
+.t-btn-bluegray.t-btn-hover-v2-1 {
+	overflow: hidden; }
+
+.t-btn-bluegray.t-btn-hover-v2-1::after, .t-btn-bluegray.t-btn-hover-v2-1:hover::after {
+	background-color: #646c77; }
+
+.t-btn-bluegray.t-btn-hover-v2-1:hover {
+	background-color: #585f69;
+	overflow: hidden; }
+
+.t-btn-bluegray.t-btn-hover-v2-2 {
+	overflow: hidden; }
+
+.t-btn-bluegray.t-btn-hover-v2-2::after, .t-btn-bluegray.t-btn-hover-v2-2:hover::after {
+	background-color: #646c77; }
+
+.t-btn-bluegray.t-btn-hover-v2-2:hover {
+	background-color: #585f69;
+	overflow: hidden; }
+
+/* Button Facebook */
+.t-btn-facebook {
+	color: #fff;
+	background-color: #3b5998; }
+
+.t-btn-facebook:hover, .t-btn-facebook.active {
+	border-color: #4c70ba;
+	background-color: #4c70ba; }
+
+.t-btn-facebook:hover, .t-btn-facebook:focus, .t-btn-facebook.active {
+	color: #fff; }
+
+.t-btn-facebook.g-btn-hover-reset:hover, .t-btn-facebook.g-btn-hover-reset.active {
+	background-color: #3b5998;
+	border-color: #3b5998; }
+
+/* Button Twitter */
+.t-btn-twitter {
+	color: #fff;
+	background-color: #00acee; }
+
+.t-btn-twitter:hover, .t-btn-twitter.active {
+	border-color: #22c2ff;
+	background-color: #22c2ff; }
+
+.t-btn-twitter:hover, .t-btn-twitter:focus, .t-btn-twitter.active {
+	color: #fff; }
+
+.t-btn-twitter.g-btn-hover-reset:hover, .t-btn-twitter.g-btn-hover-reset.active {
+	background-color: #00acee;
+	border-color: #00acee; }
+
+/* Button Instagram */
+.t-btn-instagram {
+	color: #fff;
+	background-color: #3f729b; }
+
+.t-btn-instagram:hover, .t-btn-instagram.active {
+	border-color: #548cb9;
+	background-color: #548cb9; }
+
+.t-btn-instagram:hover, .t-btn-instagram:focus, .t-btn-instagram.active {
+	color: #fff; }
+
+.t-btn-instagram.g-btn-hover-reset:hover, .t-btn-instagram.g-btn-hover-reset.active {
+	background-color: #3f729b;
+	border-color: #3f729b; }
+
+/* Button VK */
+.t-btn-vk {
+	color: #fff;
+	background-color: #2b587a; }
+
+.t-btn-vk:hover, .t-btn-vk.active {
+	border-color: #3873a0;
+	background-color: #3873a0; }
+
+.t-btn-vk:hover, .t-btn-vk:focus, .t-btn-vk.active {
+	color: #fff; }
+
+.t-btn-vk.g-btn-hover-reset:hover, .t-btn-vk.g-btn-hover-reset.active {
+	background-color: #2b587a;
+	border-color: #2b587a; }
+
+/* Button Google Plus */
+.t-btn-google-plus {
+	color: #fff;
+	background-color: #dd4b39; }
+
+.t-btn-google-plus:hover, .t-btn-google-plus.active {
+	border-color: #e47365;
+	background-color: #e47365; }
+
+.t-btn-google-plus:hover, .t-btn-google-plus:focus, .t-btn-google-plus.active {
+	color: #fff; }
+
+.t-btn-google-plus.g-btn-hover-reset:hover, .t-btn-google-plus.g-btn-hover-reset.active {
+	background-color: #dd4b39;
+	border-color: #dd4b39; }
+
+/* Outline Button Primary */
+.t-btn-outline-primary {
+	color: #72c02c;
+	border-color: #72c02c;
+	background-color: transparent; }
+
+.t-btn-outline-primary:focus, .t-btn-outline-primary.active {
+	color: #fff;
+	background-color: #72c02c; }
+
+.t-btn-outline-primary:hover {
+	color: #fff;
+	background-color: #72c02c; }
+
+.t-btn-outline-primary.t-btn-hover-v1-1 {
+	overflow: hidden; }
+
+.t-btn-outline-primary.t-btn-hover-v1-1::after, .t-btn-outline-primary.t-btn-hover-v1-1:hover::after {
+	background-color: #7fd135; }
+
+.t-btn-outline-primary.t-btn-hover-v1-1:hover {
+	overflow: hidden;
+	background-color: transparent; }
+
+.t-btn-outline-primary.t-btn-hover-v1-2 {
+	overflow: hidden; }
+
+.t-btn-outline-primary.t-btn-hover-v1-2::after, .t-btn-outline-primary.t-btn-hover-v1-2:hover::after {
+	background-color: #7fd135; }
+
+.t-btn-outline-primary.t-btn-hover-v1-2:hover {
+	overflow: hidden;
+	background-color: transparent; }
+
+.t-btn-outline-primary.t-btn-hover-v1-3 {
+	overflow: hidden; }
+
+.t-btn-outline-primary.t-btn-hover-v1-3::after, .t-btn-outline-primary.t-btn-hover-v1-3:hover::after {
+	background-color: #7fd135; }
+
+.t-btn-outline-primary.t-btn-hover-v1-3:hover {
+	overflow: hidden;
+	background-color: transparent; }
+
+.t-btn-outline-primary.t-btn-hover-v1-4 {
+	overflow: hidden; }
+
+.t-btn-outline-primary.t-btn-hover-v1-4::after, .t-btn-outline-primary.t-btn-hover-v1-4:hover::after {
+	background-color: #7fd135; }
+
+.t-btn-outline-primary.t-btn-hover-v1-4:hover {
+	overflow: hidden;
+	background-color: transparent; }
+
+.t-btn-outline-primary.t-btn-hover-v2-1 {
+	overflow: hidden; }
+
+.t-btn-outline-primary.t-btn-hover-v2-1::after, .t-btn-outline-primary.t-btn-hover-v2-1:hover::after {
+	background-color: #7fd135; }
+
+.t-btn-outline-primary.t-btn-hover-v2-1:hover {
+	overflow: hidden;
+	background-color: transparent; }
+
+.t-btn-outline-primary.t-btn-hover-v2-2 {
+	overflow: hidden; }
+
+.t-btn-outline-primary.t-btn-hover-v2-2::after, .t-btn-outline-primary.t-btn-hover-v2-2:hover::after {
+	background-color: #7fd135; }
+
+.t-btn-outline-primary.t-btn-hover-v2-2:hover {
+	overflow: hidden;
+	background-color: transparent; }
+
+.t-btn-outline-primary.t-btn-hover-v3-1 {
+	overflow: hidden; }
+
+.t-btn-outline-primary.t-btn-hover-v3-1::after, .t-btn-outline-primary.t-btn-hover-v3-1:hover::after {
+	background-color: #7fd135; }
+
+.t-btn-outline-primary.t-btn-hover-v3-1:hover {
+	overflow: hidden;
+	background-color: transparent; }
+
+/* Outline Button White */
+.t-btn-outline-white {
+	color: #fff;
+	border-color: #fff;
+	background-color: transparent; }
+
+.t-btn-outline-white:focus, .t-btn-outline-white.active {
+	color: #555;
+	background-color: #fff; }
+
+.t-btn-outline-white:hover {
+	color: #555;
+	background-color: #fff; }
+
+.t-btn-outline-white.t-btn-hover-v1-1 {
+	overflow: hidden; }
+
+.t-btn-outline-white.t-btn-hover-v1-1::after, .t-btn-outline-white.t-btn-hover-v1-1:hover::after {
+	background-color: white; }
+
+.t-btn-outline-white.t-btn-hover-v1-1:hover {
+	overflow: hidden;
+	background-color: transparent; }
+
+.t-btn-outline-white.t-btn-hover-v1-2 {
+	overflow: hidden; }
+
+.t-btn-outline-white.t-btn-hover-v1-2::after, .t-btn-outline-white.t-btn-hover-v1-2:hover::after {
+	background-color: white; }
+
+.t-btn-outline-white.t-btn-hover-v1-2:hover {
+	overflow: hidden;
+	background-color: transparent; }
+
+.t-btn-outline-white.t-btn-hover-v1-3 {
+	overflow: hidden; }
+
+.t-btn-outline-white.t-btn-hover-v1-3::after, .t-btn-outline-white.t-btn-hover-v1-3:hover::after {
+	background-color: white; }
+
+.t-btn-outline-white.t-btn-hover-v1-3:hover {
+	overflow: hidden;
+	background-color: transparent; }
+
+.t-btn-outline-white.t-btn-hover-v1-4 {
+	overflow: hidden; }
+
+.t-btn-outline-white.t-btn-hover-v1-4::after, .t-btn-outline-white.t-btn-hover-v1-4:hover::after {
+	background-color: white; }
+
+.t-btn-outline-white.t-btn-hover-v1-4:hover {
+	overflow: hidden;
+	background-color: transparent; }
+
+.t-btn-outline-white.t-btn-hover-v2-1 {
+	overflow: hidden; }
+
+.t-btn-outline-white.t-btn-hover-v2-1::after, .t-btn-outline-white.t-btn-hover-v2-1:hover::after {
+	background-color: white; }
+
+.t-btn-outline-white.t-btn-hover-v2-1:hover {
+	overflow: hidden;
+	background-color: transparent; }
+
+.t-btn-outline-white.t-btn-hover-v2-2 {
+	overflow: hidden; }
+
+.t-btn-outline-white.t-btn-hover-v2-2::after, .t-btn-outline-white.t-btn-hover-v2-2:hover::after {
+	background-color: white; }
+
+.t-btn-outline-white.t-btn-hover-v2-2:hover {
+	overflow: hidden;
+	background-color: transparent; }
+
+/* Outline Button Black */
+.t-btn-outline-black {
+	color: #000;
+	border-color: #000;
+	background-color: transparent; }
+
+.t-btn-outline-black:focus, .t-btn-outline-black.active {
+	color: #fff;
+	background-color: #000; }
+
+.t-btn-outline-black:hover {
+	color: #fff;
+	background-color: #000; }
+
+.t-btn-outline-black.t-btn-hover-v1-1 {
+	overflow: hidden; }
+
+.t-btn-outline-black.t-btn-hover-v1-1::after, .t-btn-outline-black.t-btn-hover-v1-1:hover::after {
+	background-color: #0d0d0d; }
+
+.t-btn-outline-black.t-btn-hover-v1-1:hover {
+	overflow: hidden;
+	background-color: transparent; }
+
+.t-btn-outline-black.t-btn-hover-v1-2 {
+	overflow: hidden; }
+
+.t-btn-outline-black.t-btn-hover-v1-2::after, .t-btn-outline-black.t-btn-hover-v1-2:hover::after {
+	background-color: #0d0d0d; }
+
+.t-btn-outline-black.t-btn-hover-v1-2:hover {
+	overflow: hidden;
+	background-color: transparent; }
+
+.t-btn-outline-black.t-btn-hover-v1-3 {
+	overflow: hidden; }
+
+.t-btn-outline-black.t-btn-hover-v1-3::after, .t-btn-outline-black.t-btn-hover-v1-3:hover::after {
+	background-color: #0d0d0d; }
+
+.t-btn-outline-black.t-btn-hover-v1-3:hover {
+	overflow: hidden;
+	background-color: transparent; }
+
+.t-btn-outline-black.t-btn-hover-v1-4 {
+	overflow: hidden; }
+
+.t-btn-outline-black.t-btn-hover-v1-4::after, .t-btn-outline-black.t-btn-hover-v1-4:hover::after {
+	background-color: #0d0d0d; }
+
+.t-btn-outline-black.t-btn-hover-v1-4:hover {
+	overflow: hidden;
+	background-color: transparent; }
+
+.t-btn-outline-black.t-btn-hover-v2-1 {
+	overflow: hidden; }
+
+.t-btn-outline-black.t-btn-hover-v2-1::after, .t-btn-outline-black.t-btn-hover-v2-1:hover::after {
+	background-color: #0d0d0d; }
+
+.t-btn-outline-black.t-btn-hover-v2-1:hover {
+	overflow: hidden;
+	background-color: transparent; }
+
+.t-btn-outline-black.t-btn-hover-v2-2 {
+	overflow: hidden; }
+
+.t-btn-outline-black.t-btn-hover-v2-2::after, .t-btn-outline-black.t-btn-hover-v2-2:hover::after {
+	background-color: #0d0d0d; }
+
+.t-btn-outline-black.t-btn-hover-v2-2:hover {
+	overflow: hidden;
+	background-color: transparent; }
+
+/* Outline Button Dark Gray */
+.t-btn-outline-darkgray {
+	color: #333;
+	border-color: #333;
+	background-color: transparent; }
+
+.t-btn-outline-darkgray:focus, .t-btn-outline-darkgray.active {
+	color: #fff;
+	background-color: #333; }
+
+.t-btn-outline-darkgray:hover {
+	color: #fff;
+	background-color: #333; }
+
+.t-btn-outline-darkgray.t-btn-hover-v1-1 {
+	overflow: hidden; }
+
+.t-btn-outline-darkgray.t-btn-hover-v1-1::after, .t-btn-outline-darkgray.t-btn-hover-v1-1:hover::after {
+	background-color: #404040; }
+
+.t-btn-outline-darkgray.t-btn-hover-v1-1:hover {
+	overflow: hidden;
+	background-color: transparent; }
+
+.t-btn-outline-darkgray.t-btn-hover-v1-2 {
+	overflow: hidden; }
+
+.t-btn-outline-darkgray.t-btn-hover-v1-2::after, .t-btn-outline-darkgray.t-btn-hover-v1-2:hover::after {
+	background-color: #404040; }
+
+.t-btn-outline-darkgray.t-btn-hover-v1-2:hover {
+	overflow: hidden;
+	background-color: transparent; }
+
+.t-btn-outline-darkgray.t-btn-hover-v1-3 {
+	overflow: hidden; }
+
+.t-btn-outline-darkgray.t-btn-hover-v1-3::after, .t-btn-outline-darkgray.t-btn-hover-v1-3:hover::after {
+	background-color: #404040; }
+
+.t-btn-outline-darkgray.t-btn-hover-v1-3:hover {
+	overflow: hidden;
+	background-color: transparent; }
+
+.t-btn-outline-darkgray.t-btn-hover-v1-4 {
+	overflow: hidden; }
+
+.t-btn-outline-darkgray.t-btn-hover-v1-4::after, .t-btn-outline-darkgray.t-btn-hover-v1-4:hover::after {
+	background-color: #404040; }
+
+.t-btn-outline-darkgray.t-btn-hover-v1-4:hover {
+	overflow: hidden;
+	background-color: transparent; }
+
+.t-btn-outline-darkgray.t-btn-hover-v2-1 {
+	overflow: hidden; }
+
+.t-btn-outline-darkgray.t-btn-hover-v2-1::after, .t-btn-outline-darkgray.t-btn-hover-v2-1:hover::after {
+	background-color: #404040; }
+
+.t-btn-outline-darkgray.t-btn-hover-v2-1:hover {
+	overflow: hidden;
+	background-color: transparent; }
+
+.t-btn-outline-darkgray.t-btn-hover-v2-2 {
+	overflow: hidden; }
+
+.t-btn-outline-darkgray.t-btn-hover-v2-2::after, .t-btn-outline-darkgray.t-btn-hover-v2-2:hover::after {
+	background-color: #404040; }
+
+.t-btn-outline-darkgray.t-btn-hover-v2-2:hover {
+	overflow: hidden;
+	background-color: transparent; }
+
+/* Outline Button Light Gray */
+.t-btn-outline-lightgray {
+	color: #555;
+	border-color: #eee;
+	background-color: transparent; }
+
+.t-btn-outline-lightgray:focus, .t-btn-outline-lightgray.active {
+	color: #555;
+	background-color: #eee; }
+
+.t-btn-outline-lightgray:hover {
+	color: #555;
+	background-color: #eee; }
+
+.t-btn-outline-lightgray.t-btn-hover-v1-1 {
+	overflow: hidden; }
+
+.t-btn-outline-lightgray.t-btn-hover-v1-1::after, .t-btn-outline-lightgray.t-btn-hover-v1-1:hover::after {
+	background-color: #fbfbfb; }
+
+.t-btn-outline-lightgray.t-btn-hover-v1-1:hover {
+	overflow: hidden;
+	background-color: transparent; }
+
+.t-btn-outline-lightgray.t-btn-hover-v1-2 {
+	overflow: hidden; }
+
+.t-btn-outline-lightgray.t-btn-hover-v1-2::after, .t-btn-outline-lightgray.t-btn-hover-v1-2:hover::after {
+	background-color: #fbfbfb; }
+
+.t-btn-outline-lightgray.t-btn-hover-v1-2:hover {
+	overflow: hidden;
+	background-color: transparent; }
+
+.t-btn-outline-lightgray.t-btn-hover-v1-3 {
+	overflow: hidden; }
+
+.t-btn-outline-lightgray.t-btn-hover-v1-3::after, .t-btn-outline-lightgray.t-btn-hover-v1-3:hover::after {
+	background-color: #fbfbfb; }
+
+.t-btn-outline-lightgray.t-btn-hover-v1-3:hover {
+	overflow: hidden;
+	background-color: transparent; }
+
+.t-btn-outline-lightgray.t-btn-hover-v1-4 {
+	overflow: hidden; }
+
+.t-btn-outline-lightgray.t-btn-hover-v1-4::after, .t-btn-outline-lightgray.t-btn-hover-v1-4:hover::after {
+	background-color: #fbfbfb; }
+
+.t-btn-outline-lightgray.t-btn-hover-v1-4:hover {
+	overflow: hidden;
+	background-color: transparent; }
+
+.t-btn-outline-lightgray.t-btn-hover-v2-1 {
+	overflow: hidden; }
+
+.t-btn-outline-lightgray.t-btn-hover-v2-1::after, .t-btn-outline-lightgray.t-btn-hover-v2-1:hover::after {
+	background-color: #fbfbfb; }
+
+.t-btn-outline-lightgray.t-btn-hover-v2-1:hover {
+	overflow: hidden;
+	background-color: transparent; }
+
+.t-btn-outline-lightgray.t-btn-hover-v2-2 {
+	overflow: hidden; }
+
+.t-btn-outline-lightgray.t-btn-hover-v2-2::after, .t-btn-outline-lightgray.t-btn-hover-v2-2:hover::after {
+	background-color: #fbfbfb; }
+
+.t-btn-outline-lightgray.t-btn-hover-v2-2:hover {
+	overflow: hidden;
+	background-color: transparent; }
+
+/* Button Outline Red */
+.t-btn-outline-red {
+	color: #f00;
+	border-color: #f00;
+	background-color: transparent; }
+
+.t-btn-outline-red:focus, .t-btn-outline-red.active {
+	color: #fff;
+	background-color: #f00; }
+
+.t-btn-outline-red:hover {
+	color: #fff;
+	background-color: #f00; }
+
+.t-btn-outline-red.t-btn-hover-v1-1 {
+	overflow: hidden; }
+
+.t-btn-outline-red.t-btn-hover-v1-1::after, .t-btn-outline-red.t-btn-hover-v1-1:hover::after {
+	background-color: #ff1a1a; }
+
+.t-btn-outline-red.t-btn-hover-v1-1:hover {
+	overflow: hidden;
+	background-color: transparent; }
+
+.t-btn-outline-red.t-btn-hover-v1-2 {
+	overflow: hidden; }
+
+.t-btn-outline-red.t-btn-hover-v1-2::after, .t-btn-outline-red.t-btn-hover-v1-2:hover::after {
+	background-color: #ff1a1a; }
+
+.t-btn-outline-red.t-btn-hover-v1-2:hover {
+	overflow: hidden;
+	background-color: transparent; }
+
+.t-btn-outline-red.t-btn-hover-v1-3 {
+	overflow: hidden; }
+
+.t-btn-outline-red.t-btn-hover-v1-3::after, .t-btn-outline-red.t-btn-hover-v1-3:hover::after {
+	background-color: #ff1a1a; }
+
+.t-btn-outline-red.t-btn-hover-v1-3:hover {
+	overflow: hidden;
+	background-color: transparent; }
+
+.t-btn-outline-red.t-btn-hover-v1-4 {
+	overflow: hidden; }
+
+.t-btn-outline-red.t-btn-hover-v1-4::after, .t-btn-outline-red.t-btn-hover-v1-4:hover::after {
+	background-color: #ff1a1a; }
+
+.t-btn-outline-red.t-btn-hover-v1-4:hover {
+	overflow: hidden;
+	background-color: transparent; }
+
+.t-btn-outline-red.t-btn-hover-v2-1 {
+	overflow: hidden; }
+
+.t-btn-outline-red.t-btn-hover-v2-1::after, .t-btn-outline-red.t-btn-hover-v2-1:hover::after {
+	background-color: #ff1a1a; }
+
+.t-btn-outline-red.t-btn-hover-v2-1:hover {
+	overflow: hidden;
+	background-color: transparent; }
+
+.t-btn-outline-red.t-btn-hover-v2-2 {
+	overflow: hidden; }
+
+.t-btn-outline-red.t-btn-hover-v2-2::after, .t-btn-outline-red.t-btn-hover-v2-2:hover::after {
+	background-color: #ff1a1a; }
+
+.t-btn-outline-red.t-btn-hover-v2-2:hover {
+	overflow: hidden;
+	background-color: transparent; }
+
+/* Button Outline Red Tomato */
+.t-btn-outline-lightred {
+	color: #e64b3b;
+	border-color: #e64b3b;
+	background-color: transparent; }
+
+.t-btn-outline-lightred:focus, .t-btn-outline-lightred.active {
+	color: #fff;
+	background-color: #e64b3b; }
+
+.t-btn-outline-lightred:hover {
+	color: #fff;
+	background-color: #e64b3b; }
+
+.t-btn-outline-lightred.t-btn-hover-v1-1 {
+	overflow: hidden; }
+
+.t-btn-outline-lightred.t-btn-hover-v1-1::after, .t-btn-outline-lightred.t-btn-hover-v1-1:hover::after {
+	background-color: #e96052; }
+
+.t-btn-outline-lightred.t-btn-hover-v1-1:hover {
+	overflow: hidden;
+	background-color: transparent; }
+
+.t-btn-outline-lightred.t-btn-hover-v1-2 {
+	overflow: hidden; }
+
+.t-btn-outline-lightred.t-btn-hover-v1-2::after, .t-btn-outline-lightred.t-btn-hover-v1-2:hover::after {
+	background-color: #e96052; }
+
+.t-btn-outline-lightred.t-btn-hover-v1-2:hover {
+	overflow: hidden;
+	background-color: transparent; }
+
+.t-btn-outline-lightred.t-btn-hover-v1-3 {
+	overflow: hidden; }
+
+.t-btn-outline-lightred.t-btn-hover-v1-3::after, .t-btn-outline-lightred.t-btn-hover-v1-3:hover::after {
+	background-color: #e96052; }
+
+.t-btn-outline-lightred.t-btn-hover-v1-3:hover {
+	overflow: hidden;
+	background-color: transparent; }
+
+.t-btn-outline-lightred.t-btn-hover-v1-4 {
+	overflow: hidden; }
+
+.t-btn-outline-lightred.t-btn-hover-v1-4::after, .t-btn-outline-lightred.t-btn-hover-v1-4:hover::after {
+	background-color: #e96052; }
+
+.t-btn-outline-lightred.t-btn-hover-v1-4:hover {
+	overflow: hidden;
+	background-color: transparent; }
+
+.t-btn-outline-lightred.t-btn-hover-v2-1 {
+	overflow: hidden; }
+
+.t-btn-outline-lightred.t-btn-hover-v2-1::after, .t-btn-outline-lightred.t-btn-hover-v2-1:hover::after {
+	background-color: #e96052; }
+
+.t-btn-outline-lightred.t-btn-hover-v2-1:hover {
+	overflow: hidden;
+	background-color: transparent; }
+
+.t-btn-outline-lightred.t-btn-hover-v2-2 {
+	overflow: hidden; }
+
+.t-btn-outline-lightred.t-btn-hover-v2-2::after, .t-btn-outline-lightred.t-btn-hover-v2-2:hover::after {
+	background-color: #e96052; }
+
+.t-btn-outline-lightred.t-btn-hover-v2-2:hover {
+	overflow: hidden;
+	background-color: transparent; }
+
+/* Outline Button Dark Red */
+.t-btn-outline-darkred {
+	color: #a10f2b;
+	border-color: #a10f2b;
+	background-color: transparent; }
+
+.t-btn-outline-darkred:focus, .t-btn-outline-darkred.active {
+	color: #fff;
+	background-color: #a10f2b; }
+
+.t-btn-outline-darkred:hover {
+	color: #fff;
+	background-color: #a10f2b; }
+
+.t-btn-outline-darkred.t-btn-hover-v1-1 {
+	overflow: hidden; }
+
+.t-btn-outline-darkred.t-btn-hover-v1-1::after, .t-btn-outline-darkred.t-btn-hover-v1-1:hover::after {
+	background-color: #b81131; }
+
+.t-btn-outline-darkred.t-btn-hover-v1-1:hover {
+	overflow: hidden;
+	background-color: transparent; }
+
+.t-btn-outline-darkred.t-btn-hover-v1-2 {
+	overflow: hidden; }
+
+.t-btn-outline-darkred.t-btn-hover-v1-2::after, .t-btn-outline-darkred.t-btn-hover-v1-2:hover::after {
+	background-color: #b81131; }
+
+.t-btn-outline-darkred.t-btn-hover-v1-2:hover {
+	overflow: hidden;
+	background-color: transparent; }
+
+.t-btn-outline-darkred.t-btn-hover-v1-3 {
+	overflow: hidden; }
+
+.t-btn-outline-darkred.t-btn-hover-v1-3::after, .t-btn-outline-darkred.t-btn-hover-v1-3:hover::after {
+	background-color: #b81131; }
+
+.t-btn-outline-darkred.t-btn-hover-v1-3:hover {
+	overflow: hidden;
+	background-color: transparent; }
+
+.t-btn-outline-darkred.t-btn-hover-v1-4 {
+	overflow: hidden; }
+
+.t-btn-outline-darkred.t-btn-hover-v1-4::after, .t-btn-outline-darkred.t-btn-hover-v1-4:hover::after {
+	background-color: #b81131; }
+
+.t-btn-outline-darkred.t-btn-hover-v1-4:hover {
+	overflow: hidden;
+	background-color: transparent; }
+
+.t-btn-outline-darkred.t-btn-hover-v2-1 {
+	overflow: hidden; }
+
+.t-btn-outline-darkred.t-btn-hover-v2-1::after, .t-btn-outline-darkred.t-btn-hover-v2-1:hover::after {
+	background-color: #b81131; }
+
+.t-btn-outline-darkred.t-btn-hover-v2-1:hover {
+	overflow: hidden;
+	background-color: transparent; }
+
+.t-btn-outline-darkred.t-btn-hover-v2-2 {
+	overflow: hidden; }
+
+.t-btn-outline-darkred.t-btn-hover-v2-2::after, .t-btn-outline-darkred.t-btn-hover-v2-2:hover::after {
+	background-color: #b81131; }
+
+.t-btn-outline-darkred.t-btn-hover-v2-2:hover {
+	overflow: hidden;
+	background-color: transparent; }
+
+/* Outline Button Blue */
+.t-btn-outline-blue {
+	color: #3398dc;
+	border-color: #3398dc;
+	background-color: transparent; }
+
+.t-btn-outline-blue:focus, .t-btn-outline-blue.active {
+	color: #fff;
+	background-color: #3398dc; }
+
+.t-btn-outline-blue:hover {
+	color: #fff;
+	background-color: #3398dc; }
+
+.t-btn-outline-blue.t-btn-hover-v1-1 {
+	overflow: hidden; }
+
+.t-btn-outline-blue.t-btn-hover-v1-1::after, .t-btn-outline-blue.t-btn-hover-v1-1:hover::after {
+	background-color: #49a3e0; }
+
+.t-btn-outline-blue.t-btn-hover-v1-1:hover {
+	overflow: hidden;
+	background-color: transparent; }
+
+.t-btn-outline-blue.t-btn-hover-v1-2 {
+	overflow: hidden; }
+
+.t-btn-outline-blue.t-btn-hover-v1-2::after, .t-btn-outline-blue.t-btn-hover-v1-2:hover::after {
+	background-color: #49a3e0; }
+
+.t-btn-outline-blue.t-btn-hover-v1-2:hover {
+	overflow: hidden;
+	background-color: transparent; }
+
+.t-btn-outline-blue.t-btn-hover-v1-3 {
+	overflow: hidden; }
+
+.t-btn-outline-blue.t-btn-hover-v1-3::after, .t-btn-outline-blue.t-btn-hover-v1-3:hover::after {
+	background-color: #49a3e0; }
+
+.t-btn-outline-blue.t-btn-hover-v1-3:hover {
+	overflow: hidden;
+	background-color: transparent; }
+
+.t-btn-outline-blue.t-btn-hover-v1-4 {
+	overflow: hidden; }
+
+.t-btn-outline-blue.t-btn-hover-v1-4::after, .t-btn-outline-blue.t-btn-hover-v1-4:hover::after {
+	background-color: #49a3e0; }
+
+.t-btn-outline-blue.t-btn-hover-v1-4:hover {
+	overflow: hidden;
+	background-color: transparent; }
+
+.t-btn-outline-blue.t-btn-hover-v2-1 {
+	overflow: hidden; }
+
+.t-btn-outline-blue.t-btn-hover-v2-1::after, .t-btn-outline-blue.t-btn-hover-v2-1:hover::after {
+	background-color: #49a3e0; }
+
+.t-btn-outline-blue.t-btn-hover-v2-1:hover {
+	overflow: hidden;
+	background-color: transparent; }
+
+.t-btn-outline-blue.t-btn-hover-v2-2 {
+	overflow: hidden; }
+
+.t-btn-outline-blue.t-btn-hover-v2-2::after, .t-btn-outline-blue.t-btn-hover-v2-2:hover::after {
+	background-color: #49a3e0; }
+
+.t-btn-outline-blue.t-btn-hover-v2-2:hover {
+	overflow: hidden;
+	background-color: transparent; }
+
+/* Outline Button Indigo */
+.t-btn-outline-indigo {
+	color: #4263a3;
+	border-color: #4263a3;
+	background-color: transparent; }
+
+.t-btn-outline-indigo:focus, .t-btn-outline-indigo.active {
+	color: #fff;
+	background-color: #4263a3; }
+
+.t-btn-outline-indigo:hover {
+	color: #fff;
+	background-color: #4263a3; }
+
+.t-btn-outline-indigo.t-btn-hover-v1-1 {
+	overflow: hidden; }
+
+.t-btn-outline-indigo.t-btn-hover-v1-1::after, .t-btn-outline-indigo.t-btn-hover-v1-1:hover::after {
+	background-color: #496eb5; }
+
+.t-btn-outline-indigo.t-btn-hover-v1-1:hover {
+	overflow: hidden;
+	background-color: transparent; }
+
+.t-btn-outline-indigo.t-btn-hover-v1-2 {
+	overflow: hidden; }
+
+.t-btn-outline-indigo.t-btn-hover-v1-2::after, .t-btn-outline-indigo.t-btn-hover-v1-2:hover::after {
+	background-color: #496eb5; }
+
+.t-btn-outline-indigo.t-btn-hover-v1-2:hover {
+	overflow: hidden;
+	background-color: transparent; }
+
+.t-btn-outline-indigo.t-btn-hover-v1-3 {
+	overflow: hidden; }
+
+.t-btn-outline-indigo.t-btn-hover-v1-3::after, .t-btn-outline-indigo.t-btn-hover-v1-3:hover::after {
+	background-color: #496eb5; }
+
+.t-btn-outline-indigo.t-btn-hover-v1-3:hover {
+	overflow: hidden;
+	background-color: transparent; }
+
+.t-btn-outline-indigo.t-btn-hover-v1-4 {
+	overflow: hidden; }
+
+.t-btn-outline-indigo.t-btn-hover-v1-4::after, .t-btn-outline-indigo.t-btn-hover-v1-4:hover::after {
+	background-color: #496eb5; }
+
+.t-btn-outline-indigo.t-btn-hover-v1-4:hover {
+	overflow: hidden;
+	background-color: transparent; }
+
+.t-btn-outline-indigo.t-btn-hover-v2-1 {
+	overflow: hidden; }
+
+.t-btn-outline-indigo.t-btn-hover-v2-1::after, .t-btn-outline-indigo.t-btn-hover-v2-1:hover::after {
+	background-color: #496eb5; }
+
+.t-btn-outline-indigo.t-btn-hover-v2-1:hover {
+	overflow: hidden;
+	background-color: transparent; }
+
+.t-btn-outline-indigo.t-btn-hover-v2-2 {
+	overflow: hidden; }
+
+.t-btn-outline-indigo.t-btn-hover-v2-2::after, .t-btn-outline-indigo.t-btn-hover-v2-2:hover::after {
+	background-color: #496eb5; }
+
+.t-btn-outline-indigo.t-btn-hover-v2-2:hover {
+	overflow: hidden;
+	background-color: transparent; }
+
+/* Outline Button Purple */
+.t-btn-outline-purple {
+	color: #9a69cb;
+	border-color: #9a69cb;
+	background-color: transparent; }
+
+.t-btn-outline-purple:focus, .t-btn-outline-purple.active {
+	color: #fff;
+	background-color: #9a69cb; }
+
+.t-btn-outline-purple:hover {
+	color: #fff;
+	background-color: #9a69cb; }
+
+.t-btn-outline-purple.t-btn-hover-v1-1 {
+	overflow: hidden; }
+
+.t-btn-outline-purple.t-btn-hover-v1-1::after, .t-btn-outline-purple.t-btn-hover-v1-1:hover::after {
+	background-color: #a77cd2; }
+
+.t-btn-outline-purple.t-btn-hover-v1-1:hover {
+	overflow: hidden;
+	background-color: transparent; }
+
+.t-btn-outline-purple.t-btn-hover-v1-2 {
+	overflow: hidden; }
+
+.t-btn-outline-purple.t-btn-hover-v1-2::after, .t-btn-outline-purple.t-btn-hover-v1-2:hover::after {
+	background-color: #a77cd2; }
+
+.t-btn-outline-purple.t-btn-hover-v1-2:hover {
+	overflow: hidden;
+	background-color: transparent; }
+
+.t-btn-outline-purple.t-btn-hover-v1-3 {
+	overflow: hidden; }
+
+.t-btn-outline-purple.t-btn-hover-v1-3::after, .t-btn-outline-purple.t-btn-hover-v1-3:hover::after {
+	background-color: #a77cd2; }
+
+.t-btn-outline-purple.t-btn-hover-v1-3:hover {
+	overflow: hidden;
+	background-color: transparent; }
+
+.t-btn-outline-purple.t-btn-hover-v1-4 {
+	overflow: hidden; }
+
+.t-btn-outline-purple.t-btn-hover-v1-4::after, .t-btn-outline-purple.t-btn-hover-v1-4:hover::after {
+	background-color: #a77cd2; }
+
+.t-btn-outline-purple.t-btn-hover-v1-4:hover {
+	overflow: hidden;
+	background-color: transparent; }
+
+.t-btn-outline-purple.t-btn-hover-v2-1 {
+	overflow: hidden; }
+
+.t-btn-outline-purple.t-btn-hover-v2-1::after, .t-btn-outline-purple.t-btn-hover-v2-1:hover::after {
+	background-color: #a77cd2; }
+
+.t-btn-outline-purple.t-btn-hover-v2-1:hover {
+	overflow: hidden;
+	background-color: transparent; }
+
+.t-btn-outline-purple.t-btn-hover-v2-2 {
+	overflow: hidden; }
+
+.t-btn-outline-purple.t-btn-hover-v2-2::after, .t-btn-outline-purple.t-btn-hover-v2-2:hover::after {
+	background-color: #a77cd2; }
+
+.t-btn-outline-purple.t-btn-hover-v2-2:hover {
+	overflow: hidden;
+	background-color: transparent; }
+
+/* Outline Button Dark Purple */
+.t-btn-outline-darkpurple {
+	color: #6639b6;
+	border-color: #6639b6;
+	background-color: transparent; }
+
+.t-btn-outline-darkpurple:focus, .t-btn-outline-darkpurple.active {
+	color: #fff;
+	background-color: #6639b6; }
+
+.t-btn-outline-darkpurple:hover {
+	color: #fff;
+	background-color: #6639b6; }
+
+.t-btn-outline-darkpurple.t-btn-hover-v1-1 {
+	overflow: hidden; }
+
+.t-btn-outline-darkpurple.t-btn-hover-v1-1::after, .t-btn-outline-darkpurple.t-btn-hover-v1-1:hover::after {
+	background-color: #7244c4; }
+
+.t-btn-outline-darkpurple.t-btn-hover-v1-1:hover {
+	overflow: hidden;
+	background-color: transparent; }
+
+.t-btn-outline-darkpurple.t-btn-hover-v1-2 {
+	overflow: hidden; }
+
+.t-btn-outline-darkpurple.t-btn-hover-v1-2::after, .t-btn-outline-darkpurple.t-btn-hover-v1-2:hover::after {
+	background-color: #7244c4; }
+
+.t-btn-outline-darkpurple.t-btn-hover-v1-2:hover {
+	overflow: hidden;
+	background-color: transparent; }
+
+.t-btn-outline-darkpurple.t-btn-hover-v1-3 {
+	overflow: hidden; }
+
+.t-btn-outline-darkpurple.t-btn-hover-v1-3::after, .t-btn-outline-darkpurple.t-btn-hover-v1-3:hover::after {
+	background-color: #7244c4; }
+
+.t-btn-outline-darkpurple.t-btn-hover-v1-3:hover {
+	overflow: hidden;
+	background-color: transparent; }
+
+.t-btn-outline-darkpurple.t-btn-hover-v1-4 {
+	overflow: hidden; }
+
+.t-btn-outline-darkpurple.t-btn-hover-v1-4::after, .t-btn-outline-darkpurple.t-btn-hover-v1-4:hover::after {
+	background-color: #7244c4; }
+
+.t-btn-outline-darkpurple.t-btn-hover-v1-4:hover {
+	overflow: hidden;
+	background-color: transparent; }
+
+.t-btn-outline-darkpurple.t-btn-hover-v2-1 {
+	overflow: hidden; }
+
+.t-btn-outline-darkpurple.t-btn-hover-v2-1::after, .t-btn-outline-darkpurple.t-btn-hover-v2-1:hover::after {
+	background-color: #7244c4; }
+
+.t-btn-outline-darkpurple.t-btn-hover-v2-1:hover {
+	overflow: hidden;
+	background-color: transparent; }
+
+.t-btn-outline-darkpurple.t-btn-hover-v2-2 {
+	overflow: hidden; }
+
+.t-btn-outline-darkpurple.t-btn-hover-v2-2::after, .t-btn-outline-darkpurple.t-btn-hover-v2-2:hover::after {
+	background-color: #7244c4; }
+
+.t-btn-outline-darkpurple.t-btn-hover-v2-2:hover {
+	overflow: hidden;
+	background-color: transparent; }
+
+/* Outline Button Pink */
+.t-btn-outline-pink {
+	color: #e81c62;
+	border-color: #e81c62;
+	background-color: transparent; }
+
+.t-btn-outline-pink:focus, .t-btn-outline-pink.active {
+	color: #fff;
+	background-color: #e81c62; }
+
+.t-btn-outline-pink:hover {
+	color: #fff;
+	background-color: #e81c62; }
+
+.t-btn-outline-pink.t-btn-hover-v1-1 {
+	overflow: hidden; }
+
+.t-btn-outline-pink.t-btn-hover-v1-1::after, .t-btn-outline-pink.t-btn-hover-v1-1:hover::after {
+	background-color: #ea3372; }
+
+.t-btn-outline-pink.t-btn-hover-v1-1:hover {
+	overflow: hidden;
+	background-color: transparent; }
+
+.t-btn-outline-pink.t-btn-hover-v1-2 {
+	overflow: hidden; }
+
+.t-btn-outline-pink.t-btn-hover-v1-2::after, .t-btn-outline-pink.t-btn-hover-v1-2:hover::after {
+	background-color: #ea3372; }
+
+.t-btn-outline-pink.t-btn-hover-v1-2:hover {
+	overflow: hidden;
+	background-color: transparent; }
+
+.t-btn-outline-pink.t-btn-hover-v1-3 {
+	overflow: hidden; }
+
+.t-btn-outline-pink.t-btn-hover-v1-3::after, .t-btn-outline-pink.t-btn-hover-v1-3:hover::after {
+	background-color: #ea3372; }
+
+.t-btn-outline-pink.t-btn-hover-v1-3:hover {
+	overflow: hidden;
+	background-color: transparent; }
+
+.t-btn-outline-pink.t-btn-hover-v1-4 {
+	overflow: hidden; }
+
+.t-btn-outline-pink.t-btn-hover-v1-4::after, .t-btn-outline-pink.t-btn-hover-v1-4:hover::after {
+	background-color: #ea3372; }
+
+.t-btn-outline-pink.t-btn-hover-v1-4:hover {
+	overflow: hidden;
+	background-color: transparent; }
+
+.t-btn-outline-pink.t-btn-hover-v2-1 {
+	overflow: hidden; }
+
+.t-btn-outline-pink.t-btn-hover-v2-1::after, .t-btn-outline-pink.t-btn-hover-v2-1:hover::after {
+	background-color: #ea3372; }
+
+.t-btn-outline-pink.t-btn-hover-v2-1:hover {
+	overflow: hidden;
+	background-color: transparent; }
+
+.t-btn-outline-pink.t-btn-hover-v2-2 {
+	overflow: hidden; }
+
+.t-btn-outline-pink.t-btn-hover-v2-2::after, .t-btn-outline-pink.t-btn-hover-v2-2:hover::after {
+	background-color: #ea3372; }
+
+.t-btn-outline-pink.t-btn-hover-v2-2:hover {
+	overflow: hidden;
+	background-color: transparent; }
+
+/* Outline Button Orange */
+.t-btn-outline-orange {
+	color: #e57d20;
+	border-color: #e57d20;
+	background-color: transparent; }
+
+.t-btn-outline-orange:focus, .t-btn-outline-orange.active {
+	color: #fff;
+	background-color: #e57d20; }
+
+.t-btn-outline-orange:hover {
+	color: #fff;
+	background-color: #e57d20; }
+
+.t-btn-outline-orange.t-btn-hover-v1-1 {
+	overflow: hidden; }
+
+.t-btn-outline-orange.t-btn-hover-v1-1::after, .t-btn-outline-orange.t-btn-hover-v1-1:hover::after {
+	background-color: #e88a37; }
+
+.t-btn-outline-orange.t-btn-hover-v1-1:hover {
+	overflow: hidden;
+	background-color: transparent; }
+
+.t-btn-outline-orange.t-btn-hover-v1-2 {
+	overflow: hidden; }
+
+.t-btn-outline-orange.t-btn-hover-v1-2::after, .t-btn-outline-orange.t-btn-hover-v1-2:hover::after {
+	background-color: #e88a37; }
+
+.t-btn-outline-orange.t-btn-hover-v1-2:hover {
+	overflow: hidden;
+	background-color: transparent; }
+
+.t-btn-outline-orange.t-btn-hover-v1-3 {
+	overflow: hidden; }
+
+.t-btn-outline-orange.t-btn-hover-v1-3::after, .t-btn-outline-orange.t-btn-hover-v1-3:hover::after {
+	background-color: #e88a37; }
+
+.t-btn-outline-orange.t-btn-hover-v1-3:hover {
+	overflow: hidden;
+	background-color: transparent; }
+
+.t-btn-outline-orange.t-btn-hover-v1-4 {
+	overflow: hidden; }
+
+.t-btn-outline-orange.t-btn-hover-v1-4::after, .t-btn-outline-orange.t-btn-hover-v1-4:hover::after {
+	background-color: #e88a37; }
+
+.t-btn-outline-orange.t-btn-hover-v1-4:hover {
+	overflow: hidden;
+	background-color: transparent; }
+
+.t-btn-outline-orange.t-btn-hover-v2-1 {
+	overflow: hidden; }
+
+.t-btn-outline-orange.t-btn-hover-v2-1::after, .t-btn-outline-orange.t-btn-hover-v2-1:hover::after {
+	background-color: #e88a37; }
+
+.t-btn-outline-orange.t-btn-hover-v2-1:hover {
+	overflow: hidden;
+	background-color: transparent; }
+
+.t-btn-outline-orange.t-btn-hover-v2-2 {
+	overflow: hidden; }
+
+.t-btn-outline-orange.t-btn-hover-v2-2::after, .t-btn-outline-orange.t-btn-hover-v2-2:hover::after {
+	background-color: #e88a37; }
+
+.t-btn-outline-orange.t-btn-hover-v2-2:hover {
+	overflow: hidden;
+	background-color: transparent; }
+
+/* Outline Button Deep Orange */
+.t-btn-outline-deeporange {
+	color: #fe541e;
+	border-color: #fe541e;
+	background-color: transparent; }
+
+.t-btn-outline-deeporange:focus, .t-btn-outline-deeporange.active {
+	color: #fff;
+	background-color: #fe541e; }
+
+.t-btn-outline-deeporange:hover {
+	color: #fff;
+	background-color: #fe541e; }
+
+.t-btn-outline-deeporange.t-btn-hover-v1-1 {
+	overflow: hidden; }
+
+.t-btn-outline-deeporange.t-btn-hover-v1-1::after, .t-btn-outline-deeporange.t-btn-hover-v1-1:hover::after {
+	background-color: #fe6737; }
+
+.t-btn-outline-deeporange.t-btn-hover-v1-1:hover {
+	overflow: hidden;
+	background-color: transparent; }
+
+.t-btn-outline-deeporange.t-btn-hover-v1-2 {
+	overflow: hidden; }
+
+.t-btn-outline-deeporange.t-btn-hover-v1-2::after, .t-btn-outline-deeporange.t-btn-hover-v1-2:hover::after {
+	background-color: #fe6737; }
+
+.t-btn-outline-deeporange.t-btn-hover-v1-2:hover {
+	overflow: hidden;
+	background-color: transparent; }
+
+.t-btn-outline-deeporange.t-btn-hover-v1-3 {
+	overflow: hidden; }
+
+.t-btn-outline-deeporange.t-btn-hover-v1-3::after, .t-btn-outline-deeporange.t-btn-hover-v1-3:hover::after {
+	background-color: #fe6737; }
+
+.t-btn-outline-deeporange.t-btn-hover-v1-3:hover {
+	overflow: hidden;
+	background-color: transparent; }
+
+.t-btn-outline-deeporange.t-btn-hover-v1-4 {
+	overflow: hidden; }
+
+.t-btn-outline-deeporange.t-btn-hover-v1-4::after, .t-btn-outline-deeporange.t-btn-hover-v1-4:hover::after {
+	background-color: #fe6737; }
+
+.t-btn-outline-deeporange.t-btn-hover-v1-4:hover {
+	overflow: hidden;
+	background-color: transparent; }
+
+.t-btn-outline-deeporange.t-btn-hover-v2-1 {
+	overflow: hidden; }
+
+.t-btn-outline-deeporange.t-btn-hover-v2-1::after, .t-btn-outline-deeporange.t-btn-hover-v2-1:hover::after {
+	background-color: #fe6737; }
+
+.t-btn-outline-deeporange.t-btn-hover-v2-1:hover {
+	overflow: hidden;
+	background-color: transparent; }
+
+.t-btn-outline-deeporange.t-btn-hover-v2-2 {
+	overflow: hidden; }
+
+.t-btn-outline-deeporange.t-btn-hover-v2-2::after, .t-btn-outline-deeporange.t-btn-hover-v2-2:hover::after {
+	background-color: #fe6737; }
+
+.t-btn-outline-deeporange.t-btn-hover-v2-2:hover {
+	overflow: hidden;
+	background-color: transparent; }
+
+/* Outline Button Yellow */
+.t-btn-outline-yellow {
+	color: #555;
+	border-color: #ebc71d;
+	background-color: transparent; }
+
+.t-btn-outline-yellow:focus, .t-btn-outline-yellow.active {
+	color: #555;
+	background-color: #ebc71d; }
+
+.t-btn-outline-yellow:hover {
+	color: #555;
+	background-color: #ebc71d; }
+
+.t-btn-outline-yellow.t-btn-hover-v1-1 {
+	overflow: hidden; }
+
+.t-btn-outline-yellow.t-btn-hover-v1-1::after, .t-btn-outline-yellow.t-btn-hover-v1-1:hover::after {
+	background-color: #edcd34; }
+
+.t-btn-outline-yellow.t-btn-hover-v1-1:hover {
+	overflow: hidden;
+	background-color: transparent; }
+
+.t-btn-outline-yellow.t-btn-hover-v1-2 {
+	overflow: hidden; }
+
+.t-btn-outline-yellow.t-btn-hover-v1-2::after, .t-btn-outline-yellow.t-btn-hover-v1-2:hover::after {
+	background-color: #edcd34; }
+
+.t-btn-outline-yellow.t-btn-hover-v1-2:hover {
+	overflow: hidden;
+	background-color: transparent; }
+
+.t-btn-outline-yellow.t-btn-hover-v1-3 {
+	overflow: hidden; }
+
+.t-btn-outline-yellow.t-btn-hover-v1-3::after, .t-btn-outline-yellow.t-btn-hover-v1-3:hover::after {
+	background-color: #edcd34; }
+
+.t-btn-outline-yellow.t-btn-hover-v1-3:hover {
+	overflow: hidden;
+	background-color: transparent; }
+
+.t-btn-outline-yellow.t-btn-hover-v1-4 {
+	overflow: hidden; }
+
+.t-btn-outline-yellow.t-btn-hover-v1-4::after, .t-btn-outline-yellow.t-btn-hover-v1-4:hover::after {
+	background-color: #edcd34; }
+
+.t-btn-outline-yellow.t-btn-hover-v1-4:hover {
+	overflow: hidden;
+	background-color: transparent; }
+
+.t-btn-outline-yellow.t-btn-hover-v2-1 {
+	overflow: hidden; }
+
+.t-btn-outline-yellow.t-btn-hover-v2-1::after, .t-btn-outline-yellow.t-btn-hover-v2-1:hover::after {
+	background-color: #edcd34; }
+
+.t-btn-outline-yellow.t-btn-hover-v2-1:hover {
+	overflow: hidden;
+	background-color: transparent; }
+
+.t-btn-outline-yellow.t-btn-hover-v2-2 {
+	overflow: hidden; }
+
+.t-btn-outline-yellow.t-btn-hover-v2-2::after, .t-btn-outline-yellow.t-btn-hover-v2-2:hover::after {
+	background-color: #edcd34; }
+
+.t-btn-outline-yellow.t-btn-hover-v2-2:hover {
+	overflow: hidden;
+	background-color: transparent; }
+
+/* Outline Button Aqua */
+.t-btn-outline-aqua {
+	color: #29d6e6;
+	border-color: #29d6e6;
+	background-color: transparent; }
+
+.t-btn-outline-aqua:focus, .t-btn-outline-aqua.active {
+	color: #fff;
+	background-color: #29d6e6; }
+
+.t-btn-outline-aqua:hover {
+	color: #fff;
+	background-color: #29d6e6; }
+
+.t-btn-outline-aqua.t-btn-hover-v1-1 {
+	overflow: hidden; }
+
+.t-btn-outline-aqua.t-btn-hover-v1-1::after, .t-btn-outline-aqua.t-btn-hover-v1-1:hover::after {
+	background-color: #40dae9; }
+
+.t-btn-outline-aqua.t-btn-hover-v1-1:hover {
+	overflow: hidden;
+	background-color: transparent; }
+
+.t-btn-outline-aqua.t-btn-hover-v1-2 {
+	overflow: hidden; }
+
+.t-btn-outline-aqua.t-btn-hover-v1-2::after, .t-btn-outline-aqua.t-btn-hover-v1-2:hover::after {
+	background-color: #40dae9; }
+
+.t-btn-outline-aqua.t-btn-hover-v1-2:hover {
+	overflow: hidden;
+	background-color: transparent; }
+
+.t-btn-outline-aqua.t-btn-hover-v1-3 {
+	overflow: hidden; }
+
+.t-btn-outline-aqua.t-btn-hover-v1-3::after, .t-btn-outline-aqua.t-btn-hover-v1-3:hover::after {
+	background-color: #40dae9; }
+
+.t-btn-outline-aqua.t-btn-hover-v1-3:hover {
+	overflow: hidden;
+	background-color: transparent; }
+
+.t-btn-outline-aqua.t-btn-hover-v1-4 {
+	overflow: hidden; }
+
+.t-btn-outline-aqua.t-btn-hover-v1-4::after, .t-btn-outline-aqua.t-btn-hover-v1-4:hover::after {
+	background-color: #40dae9; }
+
+.t-btn-outline-aqua.t-btn-hover-v1-4:hover {
+	overflow: hidden;
+	background-color: transparent; }
+
+.t-btn-outline-aqua.t-btn-hover-v2-1 {
+	overflow: hidden; }
+
+.t-btn-outline-aqua.t-btn-hover-v2-1::after, .t-btn-outline-aqua.t-btn-hover-v2-1:hover::after {
+	background-color: #40dae9; }
+
+.t-btn-outline-aqua.t-btn-hover-v2-1:hover {
+	overflow: hidden;
+	background-color: transparent; }
+
+.t-btn-outline-aqua.t-btn-hover-v2-2 {
+	overflow: hidden; }
+
+.t-btn-outline-aqua.t-btn-hover-v2-2::after, .t-btn-outline-aqua.t-btn-hover-v2-2:hover::after {
+	background-color: #40dae9; }
+
+.t-btn-outline-aqua.t-btn-hover-v2-2:hover {
+	overflow: hidden;
+	background-color: transparent; }
+
+/* Outline Button Cyan */
+.t-btn-outline-cyan {
+	color: #00bed6;
+	border-color: #00bed6;
+	background-color: transparent; }
+
+.t-btn-outline-cyan:focus, .t-btn-outline-cyan.active {
+	color: #fff;
+	background-color: #00bed6; }
+
+.t-btn-outline-cyan:hover {
+	color: #fff;
+	background-color: #00bed6; }
+
+.t-btn-outline-cyan.t-btn-hover-v1-1 {
+	overflow: hidden; }
+
+.t-btn-outline-cyan.t-btn-hover-v1-1::after, .t-btn-outline-cyan.t-btn-hover-v1-1:hover::after {
+	background-color: #00d5f0; }
+
+.t-btn-outline-cyan.t-btn-hover-v1-1:hover {
+	overflow: hidden;
+	background-color: transparent; }
+
+.t-btn-outline-cyan.t-btn-hover-v1-2 {
+	overflow: hidden; }
+
+.t-btn-outline-cyan.t-btn-hover-v1-2::after, .t-btn-outline-cyan.t-btn-hover-v1-2:hover::after {
+	background-color: #00d5f0; }
+
+.t-btn-outline-cyan.t-btn-hover-v1-2:hover {
+	overflow: hidden;
+	background-color: transparent; }
+
+.t-btn-outline-cyan.t-btn-hover-v1-3 {
+	overflow: hidden; }
+
+.t-btn-outline-cyan.t-btn-hover-v1-3::after, .t-btn-outline-cyan.t-btn-hover-v1-3:hover::after {
+	background-color: #00d5f0; }
+
+.t-btn-outline-cyan.t-btn-hover-v1-3:hover {
+	overflow: hidden;
+	background-color: transparent; }
+
+.t-btn-outline-cyan.t-btn-hover-v1-4 {
+	overflow: hidden; }
+
+.t-btn-outline-cyan.t-btn-hover-v1-4::after, .t-btn-outline-cyan.t-btn-hover-v1-4:hover::after {
+	background-color: #00d5f0; }
+
+.t-btn-outline-cyan.t-btn-hover-v1-4:hover {
+	overflow: hidden;
+	background-color: transparent; }
+
+.t-btn-outline-cyan.t-btn-hover-v2-1 {
+	overflow: hidden; }
+
+.t-btn-outline-cyan.t-btn-hover-v2-1::after, .t-btn-outline-cyan.t-btn-hover-v2-1:hover::after {
+	background-color: #00d5f0; }
+
+.t-btn-outline-cyan.t-btn-hover-v2-1:hover {
+	overflow: hidden;
+	background-color: transparent; }
+
+.t-btn-outline-cyan.t-btn-hover-v2-2 {
+	overflow: hidden; }
+
+.t-btn-outline-cyan.t-btn-hover-v2-2::after, .t-btn-outline-cyan.t-btn-hover-v2-2:hover::after {
+	background-color: #00d5f0; }
+
+.t-btn-outline-cyan.t-btn-hover-v2-2:hover {
+	overflow: hidden;
+	background-color: transparent; }
+
+/* Outline Button Teal */
+.t-btn-outline-teal {
+	color: #18ba9b;
+	border-color: #18ba9b;
+	background-color: transparent; }
+
+.t-btn-outline-teal:focus, .t-btn-outline-teal.active {
+	color: #fff;
+	background-color: #18ba9b; }
+
+.t-btn-outline-teal:hover {
+	color: #fff;
+	background-color: #18ba9b; }
+
+.t-btn-outline-teal.t-btn-hover-v1-1 {
+	overflow: hidden; }
+
+.t-btn-outline-teal.t-btn-hover-v1-1::after, .t-btn-outline-teal.t-btn-hover-v1-1:hover::after {
+	background-color: #1bd1ae; }
+
+.t-btn-outline-teal.t-btn-hover-v1-1:hover {
+	overflow: hidden;
+	background-color: transparent; }
+
+.t-btn-outline-teal.t-btn-hover-v1-2 {
+	overflow: hidden; }
+
+.t-btn-outline-teal.t-btn-hover-v1-2::after, .t-btn-outline-teal.t-btn-hover-v1-2:hover::after {
+	background-color: #1bd1ae; }
+
+.t-btn-outline-teal.t-btn-hover-v1-2:hover {
+	overflow: hidden;
+	background-color: transparent; }
+
+.t-btn-outline-teal.t-btn-hover-v1-3 {
+	overflow: hidden; }
+
+.t-btn-outline-teal.t-btn-hover-v1-3::after, .t-btn-outline-teal.t-btn-hover-v1-3:hover::after {
+	background-color: #1bd1ae; }
+
+.t-btn-outline-teal.t-btn-hover-v1-3:hover {
+	overflow: hidden;
+	background-color: transparent; }
+
+.t-btn-outline-teal.t-btn-hover-v1-4 {
+	overflow: hidden; }
+
+.t-btn-outline-teal.t-btn-hover-v1-4::after, .t-btn-outline-teal.t-btn-hover-v1-4:hover::after {
+	background-color: #1bd1ae; }
+
+.t-btn-outline-teal.t-btn-hover-v1-4:hover {
+	overflow: hidden;
+	background-color: transparent; }
+
+.t-btn-outline-teal.t-btn-hover-v2-1 {
+	overflow: hidden; }
+
+.t-btn-outline-teal.t-btn-hover-v2-1::after, .t-btn-outline-teal.t-btn-hover-v2-1:hover::after {
+	background-color: #1bd1ae; }
+
+.t-btn-outline-teal.t-btn-hover-v2-1:hover {
+	overflow: hidden;
+	background-color: transparent; }
+
+.t-btn-outline-teal.t-btn-hover-v2-2 {
+	overflow: hidden; }
+
+.t-btn-outline-teal.t-btn-hover-v2-2::after, .t-btn-outline-teal.t-btn-hover-v2-2:hover::after {
+	background-color: #1bd1ae; }
+
+.t-btn-outline-teal.t-btn-hover-v2-2:hover {
+	overflow: hidden;
+	background-color: transparent; }
+
+/* Outline Button Brown */
+.t-btn-outline-brown {
+	color: #9c8061;
+	border-color: #9c8061;
+	background-color: transparent; }
+
+.t-btn-outline-brown:focus, .t-btn-outline-brown.active {
+	color: #fff;
+	background-color: #9c8061; }
+
+.t-btn-outline-brown:hover {
+	color: #fff;
+	background-color: #9c8061; }
+
+.t-btn-outline-brown.t-btn-hover-v1-1 {
+	overflow: hidden; }
+
+.t-btn-outline-brown.t-btn-hover-v1-1::after, .t-btn-outline-brown.t-btn-hover-v1-1:hover::after {
+	background-color: #a68d70; }
+
+.t-btn-outline-brown.t-btn-hover-v1-1:hover {
+	overflow: hidden;
+	background-color: transparent; }
+
+.t-btn-outline-brown.t-btn-hover-v1-2 {
+	overflow: hidden; }
+
+.t-btn-outline-brown.t-btn-hover-v1-2::after, .t-btn-outline-brown.t-btn-hover-v1-2:hover::after {
+	background-color: #a68d70; }
+
+.t-btn-outline-brown.t-btn-hover-v1-2:hover {
+	overflow: hidden;
+	background-color: transparent; }
+
+.t-btn-outline-brown.t-btn-hover-v1-3 {
+	overflow: hidden; }
+
+.t-btn-outline-brown.t-btn-hover-v1-3::after, .t-btn-outline-brown.t-btn-hover-v1-3:hover::after {
+	background-color: #a68d70; }
+
+.t-btn-outline-brown.t-btn-hover-v1-3:hover {
+	overflow: hidden;
+	background-color: transparent; }
+
+.t-btn-outline-brown.t-btn-hover-v1-4 {
+	overflow: hidden; }
+
+.t-btn-outline-brown.t-btn-hover-v1-4::after, .t-btn-outline-brown.t-btn-hover-v1-4:hover::after {
+	background-color: #a68d70; }
+
+.t-btn-outline-brown.t-btn-hover-v1-4:hover {
+	overflow: hidden;
+	background-color: transparent; }
+
+.t-btn-outline-brown.t-btn-hover-v2-1 {
+	overflow: hidden; }
+
+.t-btn-outline-brown.t-btn-hover-v2-1::after, .t-btn-outline-brown.t-btn-hover-v2-1:hover::after {
+	background-color: #a68d70; }
+
+.t-btn-outline-brown.t-btn-hover-v2-1:hover {
+	overflow: hidden;
+	background-color: transparent; }
+
+.t-btn-outline-brown.t-btn-hover-v2-2 {
+	overflow: hidden; }
+
+.t-btn-outline-brown.t-btn-hover-v2-2::after, .t-btn-outline-brown.t-btn-hover-v2-2:hover::after {
+	background-color: #a68d70; }
+
+.t-btn-outline-brown.t-btn-hover-v2-2:hover {
+	overflow: hidden;
+	background-color: transparent; }
+
+/* Outline Button Bluegrey */
+.t-btn-outline-bluegray {
+	color: #585f69;
+	border-color: #585f69;
+	background-color: transparent; }
+
+.t-btn-outline-bluegray:focus, .t-btn-outline-bluegray.active {
+	color: #fff;
+	background-color: #585f69; }
+
+.t-btn-outline-bluegray:hover {
+	color: #fff;
+	background-color: #585f69; }
+
+.t-btn-outline-bluegray.t-btn-hover-v1-1 {
+	overflow: hidden; }
+
+.t-btn-outline-bluegray.t-btn-hover-v1-1::after, .t-btn-outline-bluegray.t-btn-hover-v1-1:hover::after {
+	background-color: #646c77; }
+
+.t-btn-outline-bluegray.t-btn-hover-v1-1:hover {
+	overflow: hidden;
+	background-color: transparent; }
+
+.t-btn-outline-bluegray.t-btn-hover-v1-2 {
+	overflow: hidden; }
+
+.t-btn-outline-bluegray.t-btn-hover-v1-2::after, .t-btn-outline-bluegray.t-btn-hover-v1-2:hover::after {
+	background-color: #646c77; }
+
+.t-btn-outline-bluegray.t-btn-hover-v1-2:hover {
+	overflow: hidden;
+	background-color: transparent; }
+
+.t-btn-outline-bluegray.t-btn-hover-v1-3 {
+	overflow: hidden; }
+
+.t-btn-outline-bluegray.t-btn-hover-v1-3::after, .t-btn-outline-bluegray.t-btn-hover-v1-3:hover::after {
+	background-color: #646c77; }
+
+.t-btn-outline-bluegray.t-btn-hover-v1-3:hover {
+	overflow: hidden;
+	background-color: transparent; }
+
+.t-btn-outline-bluegray.t-btn-hover-v1-4 {
+	overflow: hidden; }
+
+.t-btn-outline-bluegray.t-btn-hover-v1-4::after, .t-btn-outline-bluegray.t-btn-hover-v1-4:hover::after {
+	background-color: #646c77; }
+
+.t-btn-outline-bluegray.t-btn-hover-v1-4:hover {
+	overflow: hidden;
+	background-color: transparent; }
+
+.t-btn-outline-bluegray.t-btn-hover-v2-1 {
+	overflow: hidden; }
+
+.t-btn-outline-bluegray.t-btn-hover-v2-1::after, .t-btn-outline-bluegray.t-btn-hover-v2-1:hover::after {
+	background-color: #646c77; }
+
+.t-btn-outline-bluegray.t-btn-hover-v2-1:hover {
+	overflow: hidden;
+	background-color: transparent; }
+
+.t-btn-outline-bluegray.t-btn-hover-v2-2 {
+	overflow: hidden; }
+
+.t-btn-outline-bluegray.t-btn-hover-v2-2::after, .t-btn-outline-bluegray.t-btn-hover-v2-2:hover::after {
+	background-color: #646c77; }
+
+.t-btn-outline-bluegray.t-btn-hover-v2-2:hover {
+	overflow: hidden;
+	background-color: transparent; }
+
+/* Button Facebook */
+.t-btn-outline-facebook {
+	color: #3b5998;
+	border-color: #3b5998;
+	background-color: transparent; }
+
+.t-btn-outline-facebook:focus, .t-btn-outline-facebook.active {
+	color: #fff;
+	background-color: #3b5998; }
+
+.t-btn-outline-facebook:hover {
+	color: #fff;
+	background-color: #3b5998; }
+
+/* Button Twitter */
+.t-btn-outline-twitter {
+	color: #00acee;
+	border-color: #00acee;
+	background-color: transparent; }
+
+.t-btn-outline-twitter:focus, .t-btn-outline-twitter.active {
+	color: #fff;
+	background-color: #00acee; }
+
+.t-btn-outline-twitter:hover {
+	color: #fff;
+	background-color: #00acee; }
+
+/* Button Dribbble */
+.t-btn-outline-dribbble {
+	color: #ea4c89;
+	border-color: #ea4c89;
+	background-color: transparent; }
+
+.t-btn-outline-dribbble:focus, .t-btn-outline-dribbble.active {
+	color: #fff;
+	background-color: #ea4c89; }
+
+.t-btn-outline-dribbble:hover {
+	color: #fff;
+	background-color: #ea4c89; }
+
+/* Gradient Style v1 */
+.t-btn-gradient-v1 {
+	color: #fff;
+	background: linear-gradient(to right, #4776E6 0%, #8E54E9 100%) !important;
+	-o-border-image: linear-gradient(to right, #4776E6 0%, #8E54E9 100%);
+	border-image: linear-gradient(to right, #4776E6 0%, #8E54E9 100%);
+	border-image-slice: 1; }
+
+.t-btn-gradient-v1:hover, .t-btn-gradient-v1:focus, .t-btn-gradient-v1.active {
+	opacity: .9;
+	color: #fff; }
+
+/* Gradient Style v2 */
+.t-btn-gradient-v2 {
+	color: #fff;
+	background: linear-gradient(to right, #E040FB 0%, #00BCD4 100%) !important;
+	-o-border-image: linear-gradient(to right, #E040FB 0%, #00BCD4 100%);
+	border-image: linear-gradient(to right, #E040FB 0%, #00BCD4 100%);
+	border-image-slice: 1; }
+
+.t-btn-gradient-v2:hover, .t-btn-gradient-v2:focus, .t-btn-gradient-v2.active {
+	opacity: .9;
+	color: #fff; }
+
+/* Gradient Style v1 */
+.t-btn-outline-gradient-v1 {
+	color: #555;
+	background: transparent;
+	-o-border-image: linear-gradient(to right, #4776E6 0%, #8E54E9 100%);
+	border-image: linear-gradient(to right, #4776E6 0%, #8E54E9 100%);
+	border-image-slice: 1; }
+
+.t-btn-outline-gradient-v1:hover, .t-btn-outline-gradient-v1:focus, .t-btn-outline-gradient-v1.active {
+	background: linear-gradient(to right, #4776E6 0%, #8E54E9 100%);
+	color: #fff; }
+
+/* Gradient Style v2 */
+.t-btn-outline-gradient-v2 {
+	color: #555;
+	background: transparent;
+	-o-border-image: linear-gradient(to right, #E040FB 0%, #00BCD4 100%);
+	border-image: linear-gradient(to right, #E040FB 0%, #00BCD4 100%);
+	border-image-slice: 1; }
+
+.t-btn-outline-gradient-v2:hover, .t-btn-outline-gradient-v2:focus, .t-btn-outline-gradient-v2.active {
+	background: linear-gradient(to right, #E040FB 0%, #00BCD4 100%);
+	color: #fff; }
+
+/* Material Styles
+------------------------------------*/
+.t-btn-raised,
+.t-btn-raised:active:focus,
+.t-btn-raised:focus {
+	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12); }
+
+/*------------------------------------
+  Material: Floating
+------------------------------------*/
+.t-btn-floating {
+	width: 2.85714rem;
+	height: 2.85714rem;
+	padding: 0;
+	border-radius: 50%;
+	vertical-align: middle;
+	overflow: hidden;
+	line-height: 2.85714rem; }
+
+.t-btn-floating i {
+	font-size: 1.6rem;
+	line-height: 2.71429rem; }
+
+.t-btn-floating.t-halfway-fab {
+	position: absolute;
+	right: 1.71429rem;
+	bottom: -1.42857rem; }
+
+.t-btn-floating.t-halfway-fab--left {
+	right: auto;
+	left: 1.71429rem; }
+
+.t-btn-floating--large {
+	width: 4rem;
+	height: 4rem;
+	line-height: 4rem; }
+
+.t-btn-floating--large i {
+	font-size: 1.6rem;
+	line-height: 3.85714rem; }
+
+.t-btn-floating--large.t-halfway-fab {
+	bottom: -2rem; }
+
+button.t-btn-floating {
+	border: none; }
+
+/*------------------------------------
+  Material: Flat
+------------------------------------*/
+.t-btn-flat {
+	color: #555;
+	background-color: transparent; }
+
+.t-btn-flat:hover {
+	background-color: rgba(221, 221, 221, 0.4); }
+
+.t-btn-flat:hover, .t-btn-flat:focus {
+	color: #555; }
+
+
+/*------------------------------------
+  Searchform v1
+------------------------------------*/
+.t-searchform-v1 {
+	min-width: initial;
+	width: 21.42857rem;
+	position: absolute;
+	right: -1.07143rem;
+	top: 100%;
+	box-shadow: 0 1px 3px #ddd; }
+
+.t-searchform-v1 .form-control {
+	font-family: "TrueMedium", Helvetica, Arial, sans-serif;
+	font-size: 1.3rem; }
+
+.t-searchform-v1 .input-group-addon {
+	border: 0; }
+
+.t-searchform-v1 .input-group-addon button[type="submit"] {
+	height: 100%;
+	padding-bottom: 0.28571rem; }
+
+/*------------------------------------
+	Dropdowns
+------------------------------------*/
+[class*="t-dropdown--"] [class*="t-dropdown--"] {
+	left: 100%;
+	top: 0; }
+
+[class*="t-dropdown--"] [class*="t-dropdown--"].t-dropdown--reverse-x {
+	left: auto;
+	right: 100%; }
+
+.t-dropdown--simple.t-dropdown--reverse-y,
+.t-dropdown--jquery-slide.t-dropdown--reverse-y,
+.t-dropdown--css-animation.t-dropdown--reverse-y {
+	top: auto;
+	bottom: 100%;
+	margin-top: 0 !important;
+	margin-bottom: 1.42857rem; }
+
+/* Simple Dropdown */
+.t-dropdown--simple.t-dropdown--hidden {
+	display: none; }
+
+/* CSS Animation Dropdown */
+.t-dropdown--css-animation {
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s; }
+
+.t-dropdown--css-animation.t-dropdown--hidden {
+	opacity: 0;
+	visibility: hidden; }
+
+.t-dropdown--hidden:not(.hs-sub-ment-opened) * {
+	transition: none !important; }
+
+.t-dropdown--hidden:not(.hs-sub-ment-opened) *::before, .t-dropdown--hidden:not(.hs-sub-ment-opened) *::after {
+	transition: none !important; }
